@@ -5,13 +5,13 @@
 
 ## Links to Branches
 
-- (dev/PhysicalDesign)[https://github.com/SolarVisionMower/SolarVision/tree/dev/PhysicalDesign]
-- (dev/PCBDesign)[https://github.com/SolarVisionMower/SolarVision/tree/dev/PCBDesign]
-- (dev/DataCollection)[https://github.com/SolarVisionMower/SolarVision/tree/dev/DataCollection]
-- (dev/Programming)[https://github.com/SolarVisionMower/SolarVision/tree/dev/Programming]
-- (dev/Testing)[https://github.com/SolarVisionMower/SolarVision/tree/dev/Testing]
-- (dev/Shed)[https://github.com/SolarVisionMower/SolarVision/tree/dev/Shed]
-- (dev/Redocking)[https://github.com/SolarVisionMower/SolarVision/tree/dev/Redocking]
+- [dev/PhysicalDesign](https://github.com/SolarVisionMower/SolarVision/tree/dev/PhysicalDesign)
+- [dev/PCBDesign](https://github.com/SolarVisionMower/SolarVision/tree/dev/PCBDesign)
+- [dev/DataCollection](https://github.com/SolarVisionMower/SolarVision/tree/dev/DataCollection)
+- [dev/Programming](https://github.com/SolarVisionMower/SolarVision/tree/dev/Programming)
+- [dev/Testing](https://github.com/SolarVisionMower/SolarVision/tree/dev/Testing)
+- [dev/Shed](https://github.com/SolarVisionMower/SolarVision/tree/dev/Shed)
+- [dev/Redocking](https://github.com/SolarVisionMower/SolarVision/tree/dev/Redocking)
 
 ## Major Tasks
 

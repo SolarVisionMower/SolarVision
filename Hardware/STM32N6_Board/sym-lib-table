@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "STM32N6_Symbols")(type "KiCad")(uri "${KIPRJMOD}/symbols/MX25LM51245GXDI00.kicad_sym")(options "")(descr ""))
+)

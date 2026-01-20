@@ -29,4 +29,9 @@ Documentation of all development across all branches.
 
 ## IN PROGRESS
 
+- **PCB Design**
+	- STM32N6 Board Design
+		- Added all footprints, and symbol for IS42 SDRAM chip
+		- Yet to add symbols for STM32 and MX25
+
 ## COMPLETED

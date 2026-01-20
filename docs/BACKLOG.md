@@ -3,9 +3,19 @@
 > [!IMPORTANT]
 > Try not to commit to this branch! Commit in one of the sub-branches (ie `dev/xyz`) and merge as necessary
 
-Detailed list of everything to be done, in chronological order. It should be as detailed as possible; update here and in [PROGRESS.md](./PROGRESS.md) if anything's missing.
+## Links to Branches
+
+- (dev/PhysicalDesign)[https://github.com/SolarVisionMower/SolarVision/tree/dev/PhysicalDesign]
+- (dev/PCBDesign)[https://github.com/SolarVisionMower/SolarVision/tree/dev/PCBDesign]
+- (dev/DataCollection)[https://github.com/SolarVisionMower/SolarVision/tree/dev/DataCollection]
+- (dev/Programming)[https://github.com/SolarVisionMower/SolarVision/tree/dev/Programming]
+- (dev/Testing)[https://github.com/SolarVisionMower/SolarVision/tree/dev/Testing]
+- (dev/Shed)[https://github.com/SolarVisionMower/SolarVision/tree/dev/Shed]
+- (dev/Redocking)[https://github.com/SolarVisionMower/SolarVision/tree/dev/Redocking]
 
 ## Major Tasks
+
+Detailed list of everything to be done, in chronological order. It should be as detailed as possible; update here and in [PROGRESS.md](./PROGRESS.md) if anything's missing.
 
 <details>
 <summary>Physical Design</summary>
@@ -35,7 +45,7 @@ There are 3 boards which we will need to design, order, and assemble:
 
 - STM32N6 Board
     - This will be a 4 layer board, designed in KiCAD.
-    - Will use an **STM32N647I0H3Q**
+    - Will use an **STM32N657I0H3Q**
         - VFBGA178 Ballout
         - 0.8mm Pitch
         - 106 I/Os (not all used; perhaps only 20, others in internal pull-down state)
@@ -43,8 +53,8 @@ There are 3 boards which we will need to design, order, and assemble:
             - UART, for communication with the ESP32
             - I2C and SPI, for collecting sensor data
             - MIPI CSI-2, for camera connection
-            - XSPI, for interfacing Macronix MX25UM NOR Flash (used for boot and binary storage), same as [the Nucleo-144 board](https://www.st.com/resource/en/schematic_pack/mb1940-n657x0q-c02-schematic.pdf)
-            - (*IF TIME PERMITS*) FMC_SDRAM16, for interfacing IS42 SDRAM chip, to store YOLO weights. Otherwise, use system memory with YOLOv8-nano.
+            - XSPI, for interfacing Macronix MX25LM51245GXDI00 NOR Flash (used for boot and binary storage), same as [the Nucleo-144 board](https://www.st.com/resource/en/schematic_pack/mb1940-n657x0q-c02-schematic.pdf)
+            - (*IF TIME PERMITS*) FMC_SDRAM16, for interfacing IS42S16800F-7TLI SDRAM chip, to store YOLO weights. Otherwise, use system memory with YOLOv8-nano.
             - (*IF TIME PERMITS*) FMC Display Interface, for on-board monitoring. Not needed at all, since we'll have the web-UI.
         - Of the above, CSI, XSPI, and FMC_SDRAM will have dedicated connectors on the board, while the rest will have header pins to connect to the main control board.
 

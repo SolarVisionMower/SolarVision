@@ -2,6 +2,8 @@
 
 Documentation of all development across all branches.
 
+(Link to BACKLOG.md)[./BACKLOG.md]
+
 > [!NOTE]
 > Upon merging a development branch into this branch (`dev`), update the Completed section with the latest developments,
 > and *in the proper format!* This format is `<Completed Task> - <Merged By> - <Date> - <Commit Hash>`

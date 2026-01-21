@@ -33,5 +33,6 @@ Documentation of all development across all branches.
 	- STM32N6 Board Design
 		- Added all footprints, and symbols for MX25LM and IS42
 		- Yet to create symbol for STM32
+			- Created unit for analog pins
 
 ## COMPLETED

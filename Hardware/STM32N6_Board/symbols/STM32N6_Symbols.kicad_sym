@@ -4159,32 +4159,14 @@
 			(pin power_in line
 				(at -19.05 -8.89 0)
 				(length 2.54)
-				(name "VDDCORE"
+				(name "VBAT"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "K6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -19.05 -11.43 0)
-				(length 2.54)
-				(name "VDDCORE"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "K7"
+				(number "C2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4202,7 +4184,7 @@
 						)
 					)
 				)
-				(number "K8"
+				(number "K6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4220,7 +4202,7 @@
 						)
 					)
 				)
-				(number "K9"
+				(number "K7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4238,7 +4220,25 @@
 						)
 					)
 				)
-				(number "L7"
+				(number "K8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -19.05 -21.59 0)
+				(length 2.54)
+				(name "VDDCORE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "K9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4249,14 +4249,14 @@
 			(pin power_in line
 				(at -19.05 -24.13 0)
 				(length 2.54)
-				(name "VBAT"
+				(name "VDDCORE"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C2"
+				(number "L7"
 					(effects
 						(font
 							(size 1.27 1.27)

@@ -2772,6 +2772,42 @@
 			(pin bidirectional line
 				(at -27.94 -82.55 0)
 				(length 2.54)
+				(name "PC8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -27.94 -85.09 0)
+				(length 2.54)
+				(name "PC9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -27.94 -87.63 0)
+				(length 2.54)
 				(name "PC10"
 					(effects
 						(font
@@ -2788,7 +2824,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -27.94 -85.09 0)
+				(at -27.94 -90.17 0)
 				(length 2.54)
 				(name "PC11"
 					(effects
@@ -2806,7 +2842,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -27.94 -87.63 0)
+				(at -27.94 -92.71 0)
 				(length 2.54)
 				(name "PC12"
 					(effects
@@ -2824,7 +2860,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -27.94 -90.17 0)
+				(at -27.94 -95.25 0)
 				(length 2.54)
 				(name "PC13"
 					(effects

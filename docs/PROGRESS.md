@@ -31,8 +31,7 @@ Documentation of all development across all branches.
 
 - **PCB Design**
 	- STM32N6 Board Design
-		- Added all footprints, and symbols for MX25LM and IS42
-		- Yet to create symbol for STM32
-			- Created unit for analog pins and all GPIOs
+		- Added all footprints, and symbols for MX25LM, IS42, and STM32
+		- Yet to begin design of board
 
 ## COMPLETED

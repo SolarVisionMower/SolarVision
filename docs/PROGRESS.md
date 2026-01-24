@@ -32,6 +32,7 @@ Documentation of all development across all branches.
 - **PCB Design**
 	- STM32N6 Board Design
 		- Added all footprints, and symbols for MX25LM, IS42, and STM32
-		- Yet to begin design of board
+		- Added symbols for SPX5205 LDO, and MC34064 Buck. Standard footprints.
+		- Completed Power Unit of schematic
 
 ## COMPLETED

@@ -612,6 +612,26 @@
     [
       "4869b3db-9bd3-4900-9c3c-205f01100fa6",
       "Root"
+    ],
+    [
+      "c0d269f5-1305-43b7-953b-2a8e8325bf5b",
+      "Power_Unit"
+    ],
+    [
+      "0afb52e2-7e6f-49b3-9c55-b0f7242dca41",
+      "GPIO"
+    ],
+    [
+      "892c9571-9add-4117-8957-9fe1c7a06a87",
+      "Analog_Unit"
+    ],
+    [
+      "92c981bf-56e1-4e95-a37d-e89de9975c16",
+      "Connectors"
+    ],
+    [
+      "6b6613e8-e0b6-4175-a413-8c927f6f4831",
+      "XSPI NOR Flash"
     ]
   ],
   "text_variables": {}

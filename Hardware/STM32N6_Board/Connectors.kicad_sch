@@ -1,0 +1,13 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "a0a61015-337a-4b69-9cea-5952e33c4409")
+	(paper "A4")
+	(title_block
+		(rev "v1.0")
+		(company "SolarVision")
+		(comment 1 "https://github.com/SolarVisionMower/SolarVision")
+	)
+	(lib_symbols)
+)

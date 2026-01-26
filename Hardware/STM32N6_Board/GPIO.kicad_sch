@@ -3349,6 +3349,18 @@
 		(uuid 4da892a6-8408-49a2-b314-6aba34a85fde)
 	)
 	(rectangle
+		(start 205.74 13.97)
+		(end 283.21 104.14)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a82eae42-1d8c-45da-83a9-902e778bd4e4)
+	)
+	(rectangle
 		(start 15.24 15.24)
 		(end 121.92 195.58)
 		(stroke
@@ -3372,6 +3384,18 @@
 		)
 		(uuid "2719630e-0e52-41e0-aec9-3b90e97f3cf2")
 	)
+	(text "- Pins PN[0..12] are used for NOR flash interfacing via XSPI interface"
+		(exclude_from_sim no)
+		(at 208.534 23.622 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left top)
+		)
+		(uuid "47fffd96-a760-4bca-85c1-d85982e6152c")
+	)
 	(text "STM32N6\nGPIO Pins"
 		(exclude_from_sim no)
 		(at 20.066 25.654 0)
@@ -3383,6 +3407,31 @@
 			(justify left)
 		)
 		(uuid "480f554b-f69d-4bc8-9751-76a131f68a1d")
+	)
+	(text "NOR Flash"
+		(exclude_from_sim no)
+		(at 111.252 179.07 90)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "c96e3230-5f13-4aad-839e-a41aacedf911")
+	)
+	(text "Design Notes"
+		(exclude_from_sim no)
+		(at 208.28 19.05 0)
+		(effects
+			(font
+				(size 3.302 3.302)
+				(thickness 0.4128)
+			)
+			(justify left)
+		)
+		(uuid "f2d7e0eb-eff2-4547-b68c-93a77855b94f")
 	)
 	(no_connect
 		(at 116.84 132.08)
@@ -6683,6 +6732,16 @@
 		)
 		(uuid "e551f097-082d-48fb-9529-5e2ad41ff01e")
 	)
+	(wire
+		(pts
+			(xy 209.55 127) (xy 227.33 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5c5ac47-c61f-4a6c-beb8-c2137bf9353d")
+	)
 	(bus
 		(pts
 			(xy 106.68 121.92) (xy 106.68 120.65)
@@ -8163,6 +8222,16 @@
 		)
 		(uuid "d271231c-e6d8-4d5a-a9a3-986deb183286")
 	)
+	(label "PA6"
+		(at 209.55 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d4ccd3cc-2336-4b5c-80ff-b901660f27e7")
+	)
 	(label "PE8"
 		(at 104.14 57.15 180)
 		(effects
@@ -8386,6 +8455,17 @@
 		)
 		(uuid "aab64f07-990e-43b1-87f6-a21500f17c7b")
 	)
+	(hierarchical_label "BOOT1"
+		(shape input)
+		(at 227.33 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ad9088ad-d8d1-43ef-9fe1-eb52d8c2639b")
+	)
 	(symbol
 		(lib_id "STM32N6_Symbols:STM32N657I0H3Q")
 		(at 68.58 40.64 0)
@@ -8404,7 +8484,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "STM32N657I0H3Q"
 			(at 68.58 35.56 0)
 			(effects
 				(font

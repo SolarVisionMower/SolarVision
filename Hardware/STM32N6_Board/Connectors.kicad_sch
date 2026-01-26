@@ -10,4 +10,68 @@
 		(comment 1 "https://github.com/SolarVisionMower/SolarVision")
 	)
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 223.52 22.86) (xy 240.03 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6623f014-f6e6-41f9-a8e3-67e46205e97f")
+	)
+	(wire
+		(pts
+			(xy 223.52 29.21) (xy 240.03 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9209a5f8-68f9-4b7d-a272-3107d3b17ad3")
+	)
+	(label "BOOT0"
+		(at 223.52 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d801d50-34e7-4366-97a5-bd6d516ece23")
+	)
+	(label "BOOT1"
+		(at 223.52 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left bottom)
+		)
+		(uuid "e6d215fb-40b3-4902-90af-c17228d8b91d")
+	)
+	(hierarchical_label "BOOT1"
+		(shape input)
+		(at 240.03 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "16b7ffc9-a1d4-4e0f-945c-4a6d64bdeae2")
+	)
+	(hierarchical_label "BOOT0"
+		(shape input)
+		(at 240.03 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "72bec650-bee4-4894-aed6-d93a009692ca")
+	)
 )

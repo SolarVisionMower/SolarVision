@@ -5641,7 +5641,7 @@
 		)
 		(uuid "13f00f06-ecd5-4b75-a6e9-0c1064f864fa")
 	)
-	(text "- VDD has 7 capacitors because:\n    - 3 VDD pins\n    - 2 VDDIO3 pins\n    - 2 VDDIO4 pins\n- VDDCORE has 6 capacitors because:\n    - 5 VDDCORE pins\n    - 1 VDDCSI pin\n- VDDA1V8 has 4 capacitors because:\n\n- Power input to board is 5V @ 3A max\n- Total of 5 LDOs and Bucks for 3v3 and 1v8\n    - Buck converter for 1v8 VDD, always on\n    - LDO for 1v8 VDDA18AON, always on\n    - LDO for 3v3 VDD3V3 (USB pin)\n    - LDO for 1v8 VDDA1V8\n    - LDO for 1v8 VDD1V8\n- All LDO's and Bucks should be adjustable\n   and with enable pins. Permanently enable\n   VDD and VDDA18AON\n\n- Ferrite bead (FB1) requirements:\n    - 50 Ohms at 100MHz\n    - At least 400mA I_DC\n    - Max 0.1 Ohms DCR\n\n- VREFP is reference for internal ADC.\n   J1 is a jumper to VDDA1V8, use separate\n   reference if desired.\n\n- Forgot to add in symbols:\n    - LDO's are SPX5205-ADJ\n    - Buck is MC34064-ACD-TR\n    - Schottky diode is 1A 40V per the\n       datasheet\n    - Ferrite will be ILB1206ER500V"
+	(text "- VDD has 7 capacitors because:\n    - 3 VDD pins\n    - 2 VDDIO3 pins\n    - 2 VDDIO4 pins\n- VDDCORE has 6 capacitors because:\n    - 5 VDDCORE pins\n    - 1 VDDCSI pin\n- VDDA1V8 has 4 capacitors because:\n\n- Power input to board is 5V @ 3A max\n- Total of 5 LDOs and Bucks for 3v3 and 1v8\n    - Buck converter for 1v8 VDD, always on\n    - LDO for 1v8 VDDA18AON, always on\n    - LDO for 3v3 VDD3V3 (USB pin)\n    - LDO for 1v8 VDDA1V8\n    - LDO for 1v8 VDD1V8\n- All LDO's and Bucks should be adjustable\n   and with enable pins. Permanently enable\n   VDD and VDDA18AON\n\n- Ferrite bead (FB1) requirements:\n    - 50 Ohms at 100MHz\n    - At least 400mA I_DC\n    - Max 0.1 Ohms DCR\n\n- VREFP is reference for internal ADC.\n   J1 is a jumper to VDDA1V8, use separate\n   reference if desired.\n\n- Forgot to add in symbols:\n    - LDO's are SPX5205-ADJ\n    - Buck is MC34064-ACD-TR\n    - Schottky diode is 1A 40V per the\n       datasheet. Preferably 0402 package\n    - Ferrite will be ILB1206ER500V"
 		(exclude_from_sim no)
 		(at 229.87 24.13 0)
 		(effects
@@ -7503,7 +7503,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 144.78) (xy 269.24 144.78)
+			(xy 267.97 144.78) (xy 270.51 144.78)
 		)
 		(stroke
 			(width 0)
@@ -8123,7 +8123,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 144.78) (xy 250.19 144.78)
+			(xy 238.76 144.78) (xy 251.46 144.78)
 		)
 		(stroke
 			(width 0)
@@ -8593,7 +8593,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 144.78) (xy 259.08 144.78)
+			(xy 256.54 144.78) (xy 260.35 144.78)
 		)
 		(stroke
 			(width 0)
@@ -9213,6 +9213,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 154.94) (xy 260.35 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8189350-8bbd-4410-a517-43c1a56eda77")
+	)
+	(wire
+		(pts
 			(xy 24.13 135.89) (xy 24.13 138.43)
 		)
 		(stroke
@@ -9260,6 +9270,16 @@
 			(type default)
 		)
 		(uuid "cb17c073-d41a-4ae0-8c21-49778c11f34c")
+	)
+	(wire
+		(pts
+			(xy 267.97 154.94) (xy 270.51 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb5e8f4c-db74-413b-8470-622f2c798e58")
 	)
 	(wire
 		(pts
@@ -9590,6 +9610,16 @@
 			(type default)
 		)
 		(uuid "e3a9d2d2-60ec-4cf2-8360-cc87e247e8fd")
+	)
+	(wire
+		(pts
+			(xy 238.76 154.94) (xy 251.46 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3e0907f-0f91-4fd1-ab9c-6e877842c8f7")
 	)
 	(wire
 		(pts
@@ -10062,7 +10092,7 @@
 		(uuid "04ecf4bf-0f7d-4897-9bde-79705d06b206")
 	)
 	(label "VDD"
-		(at 243.84 144.78 0)
+		(at 238.76 144.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10181,6 +10211,17 @@
 			(justify right bottom)
 		)
 		(uuid "3b668172-9ebb-45e6-bb8f-1712dd8a14c3")
+	)
+	(label "VDDA1V8_AON"
+		(at 238.76 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c399c00-0723-4d39-bfd4-bb92b96f3908")
 	)
 	(label "VDDA1V8_AON"
 		(at 205.74 151.13 0)
@@ -11043,7 +11084,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "STM32N657I0H3Q"
 			(at 54.61 26.67 0)
 			(effects
 				(font
@@ -13631,6 +13672,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 264.16 154.94 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d31a8c7-c22c-46cf-9681-7e776176a0f5")
+		(property "Reference" "D3"
+			(at 265.7475 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 265.7475 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 264.16 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 264.16 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 264.16 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 264.16 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0326be4a-8ee5-4339-89a7-fca073f2ed77")
+		)
+		(pin "2"
+			(uuid "51ae4b08-3002-4833-a4b1-2e7bed75a68c")
+		)
+		(instances
+			(project "STM32N6_Board"
+				(path "/4869b3db-9bd3-4900-9c3c-205f01100fa6/c0d269f5-1305-43b7-953b-2a8e8325bf5b"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 128.27 133.35 0)
 		(unit 1)
@@ -13764,6 +13882,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 270.51 154.94 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "620094c1-fa29-4f43-8c53-9176a932c722")
+		(property "Reference" "#PWR032"
+			(at 276.86 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 274.32 154.9399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 270.51 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 270.51 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 270.51 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a268443-4c23-469a-99b4-e31dc15987d0")
+		)
+		(instances
+			(project "STM32N6_Board"
+				(path "/4869b3db-9bd3-4900-9c3c-205f01100fa6/c0d269f5-1305-43b7-953b-2a8e8325bf5b"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 204.47 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13830,7 +14015,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 252.73 144.78 90)
+		(at 254 144.78 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13839,7 +14024,7 @@
 		(fields_autoplaced yes)
 		(uuid "68bad0b0-0a46-4bde-8e33-e28551f0e19e")
 		(property "Reference" "R18"
-			(at 252.73 138.43 90)
+			(at 254 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13847,7 +14032,7 @@
 			)
 		)
 		(property "Value" "200R"
-			(at 252.73 140.97 90)
+			(at 254 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13855,7 +14040,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 252.73 144.78 0)
+			(at 254 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13864,7 +14049,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 144.78 0)
+			(at 254 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13873,7 +14058,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 252.73 144.78 0)
+			(at 254 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13898,7 +14083,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 269.24 144.78 90)
+		(at 270.51 144.78 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13907,7 +14092,7 @@
 		(fields_autoplaced yes)
 		(uuid "6ab1dbef-12e2-4133-89b1-d4e34598f439")
 		(property "Reference" "#PWR031"
-			(at 275.59 144.78 0)
+			(at 276.86 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13916,7 +14101,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 273.05 144.7799 90)
+			(at 274.32 144.7799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13925,7 +14110,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 269.24 144.78 0)
+			(at 270.51 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13934,7 +14119,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 269.24 144.78 0)
+			(at 270.51 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13943,7 +14128,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 269.24 144.78 0)
+			(at 270.51 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14508,6 +14693,74 @@
 			(project "STM32N6_Board"
 				(path "/4869b3db-9bd3-4900-9c3c-205f01100fa6/c0d269f5-1305-43b7-953b-2a8e8325bf5b"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 254 154.94 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8262c865-b46a-4dd8-bbd6-33be913e9052")
+		(property "Reference" "R19"
+			(at 254 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R"
+			(at 254 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 254 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 254 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c212f2e1-e89f-40a8-b33c-449682cce879")
+		)
+		(pin "2"
+			(uuid "2068009b-202b-4d2c-9ea3-cdc4de6f5619")
+		)
+		(instances
+			(project "STM32N6_Board"
+				(path "/4869b3db-9bd3-4900-9c3c-205f01100fa6/c0d269f5-1305-43b7-953b-2a8e8325bf5b"
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -17102,7 +17355,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 262.89 144.78 180)
+		(at 264.16 144.78 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17111,7 +17364,7 @@
 		(fields_autoplaced yes)
 		(uuid "d9faf46d-5fb0-45aa-a8ca-da00a1b7a587")
 		(property "Reference" "D2"
-			(at 264.4775 137.16 0)
+			(at 265.7475 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17119,7 +17372,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 264.4775 139.7 0)
+			(at 265.7475 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17127,7 +17380,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 262.89 144.78 0)
+			(at 264.16 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17136,7 +17389,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 262.89 144.78 0)
+			(at 264.16 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17145,7 +17398,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 262.89 144.78 0)
+			(at 264.16 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17154,7 +17407,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 262.89 144.78 0)
+			(at 264.16 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)

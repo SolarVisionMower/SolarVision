@@ -42,6 +42,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 146.05) (xy 214.63 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "121ce24e-458a-4f84-bd6d-70467deee6e1")
+	)
+	(wire
+		(pts
 			(xy 161.29 115.57) (xy 185.42 115.57)
 		)
 		(stroke
@@ -122,6 +132,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 96.52) (xy 217.17 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef469528-c11b-4aec-9cbe-ebf040b21c91")
+	)
+	(wire
+		(pts
 			(xy 180.34 111.76) (xy 185.42 111.76)
 		)
 		(stroke
@@ -129,6 +149,16 @@
 			(type default)
 		)
 		(uuid "f0f3d06a-1220-4a1f-81a9-8c26d4e2988b")
+	)
+	(wire
+		(pts
+			(xy 217.17 96.52) (xy 217.17 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc000848-1b9b-4e8b-95d1-edd0b448aa0c")
 	)
 	(sheet
 		(at 96.52 52.07)
@@ -246,6 +276,16 @@
 				(justify left)
 			)
 		)
+		(pin "~{NOR_NRST}" input
+			(at 214.63 146.05 0)
+			(uuid "b414033d-f271-4630-8c67-f05320a50294")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "STM32N6_Board"
 				(path "/4869b3db-9bd3-4900-9c3c-205f01100fa6"
@@ -336,6 +376,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "~{NOR_NRST}" input
+			(at 214.63 96.52 0)
+			(uuid "c3d05a2d-c7c3-4985-963f-4207ee7a98bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

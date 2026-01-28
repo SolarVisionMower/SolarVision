@@ -5252,16 +5252,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 83.82) (xy 194.31 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3008aa0f-dd8c-48a8-89d5-5fbe5780b27a")
-	)
-	(wire
-		(pts
 			(xy 109.22 168.91) (xy 109.22 172.72)
 		)
 		(stroke
@@ -5319,6 +5309,16 @@
 			(type default)
 		)
 		(uuid "3b532c75-8fed-426b-b5d4-cdc981f4b1d4")
+	)
+	(bus
+		(pts
+			(xy 171.45 83.82) (xy 194.31 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c26968f-fe9a-428e-a607-b661351fdf79")
 	)
 	(wire
 		(pts
@@ -5622,6 +5622,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 43.18) (xy 201.93 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91d90ebb-a412-4fe9-8cd5-d3fa63f45e25")
+	)
+	(wire
+		(pts
 			(xy 73.66 148.59) (xy 73.66 158.75)
 		)
 		(stroke
@@ -5769,6 +5779,16 @@
 			(type default)
 		)
 		(uuid "bf767ed2-a120-4c67-bb8f-7bb7e99215b7")
+	)
+	(wire
+		(pts
+			(xy 222.25 96.52) (xy 245.11 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3390355-0110-4cb9-ae20-59a6b29ce2f1")
 	)
 	(wire
 		(pts
@@ -6053,6 +6073,16 @@
 		)
 		(uuid "1b751b6f-f63e-4db4-b9ef-c373aaa47a4f")
 	)
+	(label "RESET_PIN"
+		(at 222.25 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "21225bd7-845b-4a67-be2e-e95e91e97f3b")
+	)
 	(label "{STM32_USB}"
 		(at 52.07 158.75 0)
 		(effects
@@ -6213,6 +6243,16 @@
 			(justify left bottom)
 		)
 		(uuid "71657d7d-c1bc-4667-bea5-c794d2cb318e")
+	)
+	(label "RESET_PIN"
+		(at 201.93 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "76718030-e35c-4f15-ae6d-80cc9eb2f351")
 	)
 	(label "{STM32_USB}"
 		(at 53.34 105.41 0)
@@ -6473,6 +6513,17 @@
 			(justify left)
 		)
 		(uuid "d8a00675-a2d1-4641-bee0-c3f68b88232f")
+	)
+	(hierarchical_label "RESET_PIN"
+		(shape input)
+		(at 245.11 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "edc6018d-618e-4e6e-9874-36a56ee5fdeb")
 	)
 	(symbol
 		(lib_id "power:GND")

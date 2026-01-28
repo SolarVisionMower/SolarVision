@@ -42,13 +42,23 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 146.05) (xy 214.63 146.05)
+			(xy 217.17 152.4) (xy 214.63 152.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "121ce24e-458a-4f84-bd6d-70467deee6e1")
+	)
+	(wire
+		(pts
+			(xy 161.29 81.28) (xy 185.42 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1752f093-1b58-4d73-a5db-829927d11414")
 	)
 	(wire
 		(pts
@@ -62,7 +72,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 149.86) (xy 182.88 91.44)
+			(xy 182.88 156.21) (xy 182.88 91.44)
 		)
 		(stroke
 			(width 0)
@@ -72,7 +82,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 78.74) (xy 180.34 111.76)
+			(xy 180.34 77.47) (xy 180.34 111.76)
 		)
 		(stroke
 			(width 0)
@@ -82,17 +92,27 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 146.05) (xy 185.42 146.05)
+			(xy 161.29 96.52) (xy 185.42 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "53853b02-fd0e-40e0-b8bc-720e627efc04")
+		(uuid "444f5136-ea70-4dfd-9eab-65d4d9535bdf")
 	)
 	(wire
 		(pts
-			(xy 185.42 149.86) (xy 182.88 149.86)
+			(xy 161.29 152.4) (xy 185.42 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b4e8446-b3ca-47c3-9308-7bf45be4abf5")
+	)
+	(wire
+		(pts
+			(xy 185.42 156.21) (xy 182.88 156.21)
 		)
 		(stroke
 			(width 0)
@@ -112,7 +132,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 78.74) (xy 180.34 78.74)
+			(xy 185.42 77.47) (xy 180.34 77.47)
 		)
 		(stroke
 			(width 0)
@@ -152,7 +172,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 96.52) (xy 217.17 146.05)
+			(xy 217.17 96.52) (xy 217.17 152.4)
 		)
 		(stroke
 			(width 0)
@@ -195,7 +215,7 @@
 			)
 		)
 		(pin "XSPI" bidirectional
-			(at 161.29 146.05 0)
+			(at 161.29 152.4 0)
 			(uuid "7c2bd199-125c-4177-adc1-3e29cb850a7d")
 			(effects
 				(font
@@ -214,6 +234,86 @@
 				(justify right)
 			)
 		)
+		(pin "USB" input
+			(at 161.29 96.52 0)
+			(uuid "12c8273c-e409-4e21-a6d1-7b60ea355ffb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RESET_PIN" input
+			(at 161.29 81.28 0)
+			(uuid "a90603fb-5c0f-4273-8bc8-db0471045ef6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "FMC" input
+			(at 96.52 59.69 180)
+			(uuid "19003106-3069-4c1b-958e-3540cf7ea474")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "HDP" input
+			(at 161.29 120.65 0)
+			(uuid "881156e6-5468-49a9-8f8f-8d22ccf5994e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C" input
+			(at 161.29 124.46 0)
+			(uuid "9fd4a849-aef1-4e7d-ab93-32e9132b613a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI" input
+			(at 161.29 128.27 0)
+			(uuid "53ed3eee-3733-4167-aa78-cce8d60d4477")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TIMER" input
+			(at 161.29 132.08 0)
+			(uuid "a9729097-aa07-40b3-96a4-ef7e6def9459")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "UART" input
+			(at 161.29 135.89 0)
+			(uuid "bb8e5565-0cf3-4794-ab97-a5d26bd84c14")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "STM32N6_Board"
 				(path "/4869b3db-9bd3-4900-9c3c-205f01100fa6"
@@ -223,7 +323,7 @@
 		)
 	)
 	(sheet
-		(at 185.42 142.24)
+		(at 185.42 148.59)
 		(size 29.21 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -239,7 +339,7 @@
 		)
 		(uuid "6b6613e8-e0b6-4175-a413-8c927f6f4831")
 		(property "Sheetname" "XSPI NOR Flash"
-			(at 185.42 141.5284 0)
+			(at 185.42 147.8784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -248,7 +348,7 @@
 			)
 		)
 		(property "Sheetfile" "NOR_Flash.kicad_sch"
-			(at 185.42 155.5246 0)
+			(at 185.42 161.8746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -257,7 +357,7 @@
 			)
 		)
 		(pin "XSPI" bidirectional
-			(at 185.42 146.05 180)
+			(at 185.42 152.4 180)
 			(uuid "f85b5f4c-ca6d-4cd4-b690-d5c402540a0f")
 			(effects
 				(font
@@ -267,7 +367,7 @@
 			)
 		)
 		(pin "PWR_ON" input
-			(at 185.42 149.86 180)
+			(at 185.42 156.21 180)
 			(uuid "faf0fd76-d8e2-4db5-9147-c260399b4ef3")
 			(effects
 				(font
@@ -277,7 +377,7 @@
 			)
 		)
 		(pin "~{NOR_NRST}" input
-			(at 214.63 146.05 0)
+			(at 214.63 152.4 0)
 			(uuid "b414033d-f271-4630-8c67-f05320a50294")
 			(effects
 				(font
@@ -329,7 +429,7 @@
 			)
 		)
 		(pin "BOOT0" input
-			(at 185.42 78.74 180)
+			(at 185.42 77.47 180)
 			(uuid "e1ba8c69-800b-493b-8dbd-a6f7ccc90543")
 			(effects
 				(font
@@ -369,7 +469,7 @@
 			)
 		)
 		(pin "CSI" input
-			(at 185.42 74.93 180)
+			(at 185.42 73.66 180)
 			(uuid "1616c676-65e9-4c96-b10d-f013c203d4bd")
 			(effects
 				(font
@@ -388,6 +488,16 @@
 				(justify right)
 			)
 		)
+		(pin "RESET_PIN" input
+			(at 185.42 81.28 180)
+			(uuid "63dceb2d-1b68-48cd-b2fb-cb9f2004109a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "STM32N6_Board"
 				(path "/4869b3db-9bd3-4900-9c3c-205f01100fa6"
@@ -398,7 +508,7 @@
 	)
 	(sheet
 		(at 185.42 107.95)
-		(size 29.21 26.67)
+		(size 29.21 33.02)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -422,7 +532,7 @@
 			)
 		)
 		(property "Sheetfile" "Connectors.kicad_sch"
-			(at 185.42 135.2046 0)
+			(at 185.42 141.5546 0)
 			(effects
 				(font
 					(size 1.27 1.27)

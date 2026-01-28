@@ -1,5 +1,42 @@
 # Design Notes
 
+## Ballout
+
+- This section was completed *after* wiring the Power and Analog units, as well as the NOR Flash unit in the schematic. However it is important, so it'll be at the top.
+- There's a spreadsheet for the BGA pinout, can be found [here](https://docs.google.com/spreadsheets/d/1W3wl7rZQ2mxVOFGO9Ns9zJrD_qd8Au_sG3PKxmy8APU/edit?usp=sharing). It has *all* the balls, but the ones we need have been checked off, and most have signals labeled next to them.
+- The pinout was generated in STM32CubeMX, and the configuration has been stored in [`Software/`](../../Software).
+- The ballout from the CubeMX's UI is shown below. It isn't very detailed in the photo, so consulting the spreadsheet (or better, git pull and open in CubeMX) is highly recommended.
+
+![Ballout from STM32CubeMX](../assets/Pinout.png)
+
+The STM32's **connection with the main board** will be through a set of two 18 pin header pins on each side of the stm32. These pins will be as follows, top to bottom:
+
+| Left | Right |
+|:----:|:-----:|
+| 5V | 5V |
+| GND | GND |
+| UART1-TX | UART2-TX |
+| UART1-RX | UART2-RX |
+| UART3-TX | UART4-TX |
+| UART3-RX | UART4-RX |
+| SPI1-MISO | SPI2-MISO |
+| SPI1-MOSI | SPI2-MOSI |
+| SPI1-CS | SPI2-CS |
+| SPI1-CLK | SPI2-CLK |
+| I2C1-SDA | I2C2-SDA |
+| I2C1-SCL | I2C2-SCL |
+| TIM2-CH1 | TIM3-CH2 |
+| TIM2-CH2 | TIM3-CH3 |
+| TIM4-CH1 | TIM9-CH1 |
+| TIM4-CH2 | TIM9-CH2 |
+| 5V | 5V |
+| GND | GND |
+
+- Putting 5V *and* ground on each side promotes better current flow through the ground planes I believe. This will allow charges to flow in the direction to the nearest ground.
+- 5V pins will have reverse polarity protection diodes.
+- All pins are technically GPIO pins, but they can also be used specifically for the tasks displayed. The timer pins are capable of PWM, and analog read upto 1v8.
+
+
 ## Power
 
 - VDD has 7 capacitors because:

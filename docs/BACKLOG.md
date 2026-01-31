@@ -174,6 +174,8 @@ There are 4 of us team members, and so we will be splitting up responsibilities,
 
 [Budgeting spreadsheet can be found here.](https://drive.google.com/drive/folders/1ZBdfXEnTgUfjmxBh2aHWwEIxdO-Y8bWZ?usp=sharing)
 
+**Edit (01/24/2026):** We have reached a consensus on the division of responsibilities. The Gantt Chart we created can be [found here](https://docs.google.com/spreadsheets/d/1--nTUD_fsUKMP01lJ4NdwEQdVoJq4U2uNLm4wrHddHY/edit?usp=sharing).
+
 <!--
 Table Template
 

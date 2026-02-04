@@ -1,4 +1,4 @@
-25613577387080310
+25606410223964311
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -93744,6 +93744,13 @@ rotary encoder illuminated switch vertical
 9
 8
 STM32N6_Footprints
+AMPHENOL_F305-1A7H1-11015-E100
+
+
+0
+17
+17
+STM32N6_Footprints
 IS42S16800F-7TLI_SOP80P1176X120-54N
 
 
@@ -102661,3 +102668,17 @@ Varistor VF
 0
 2
 2
+cap_smd_custom
+CL06B104KO5NNNC
+
+
+0
+2
+2
+cap_smd_custom
+Untitled
+
+
+0
+0
+0

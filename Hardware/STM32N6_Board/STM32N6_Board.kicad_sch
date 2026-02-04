@@ -11,30 +11,6 @@
 		(comment 1 "https://github.com/SolarVisionMower/SolarVision")
 	)
 	(lib_symbols)
-	(rectangle
-		(start 177.8 48.26)
-		(end 280.67 161.29)
-		(stroke
-			(width 0.254)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 410cee92-67b2-46f6-8295-6200745dd11b)
-	)
-	(text "Design Notes"
-		(exclude_from_sim no)
-		(at 179.832 51.054 0)
-		(effects
-			(font
-				(size 3.302 3.302)
-				(thickness 0.4128)
-			)
-			(justify left top)
-		)
-		(uuid "07b019d9-7e03-4911-8735-ba6f7c37ef5f")
-	)
 	(text "STM32657I0H3Q Board\nFor running YOLO Inference on the\nSolarVision Mower"
 		(exclude_from_sim no)
 		(at 18.796 19.05 0)

@@ -917,16 +917,16 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0 7.112 0)
+			(property "Reference" "U1"
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
+			(property "Value" "STM32N657I0H3Q"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4054,7 +4054,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin passive line
 					(at 19.05 -46.99 180)
 					(length 2.54)
 					(name "VLXSMPS"
@@ -4072,7 +4072,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin passive line
 					(at 19.05 -49.53 180)
 					(length 2.54)
 					(name "VLXSMPS"
@@ -4090,7 +4090,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin passive line
 					(at 19.05 -52.07 180)
 					(length 2.54)
 					(name "VLXSMPS"
@@ -4108,7 +4108,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin passive line
 					(at 19.05 -54.61 180)
 					(length 2.54)
 					(name "VLXSMPS"
@@ -5007,6 +5007,10 @@
 		(color 0 0 0 0)
 		(uuid "e74ba735-1ef4-4a30-a08d-c522bc4c6739")
 	)
+	(no_connect
+		(at 33.02 40.64)
+		(uuid "49ed1fd8-44fd-490f-9412-f797d6e1b8fa")
+	)
 	(bus_entry
 		(at 149.86 111.76)
 		(size 2.54 -2.54)
@@ -5506,16 +5510,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 83.82) (xy 264.16 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d2b5d66-7ae1-400b-95ab-fcb7e75b6cc6")
-	)
-	(wire
-		(pts
 			(xy 33.02 45.72) (xy 43.18 45.72)
 		)
 		(stroke
@@ -5873,6 +5867,16 @@
 			(type default)
 		)
 		(uuid "98783053-5dcb-433e-8096-396444ba55e4")
+	)
+	(bus
+		(pts
+			(xy 241.3 83.82) (xy 264.16 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dc3e99c-041a-47b4-8eb6-19e4c3ca0d98")
 	)
 	(wire
 		(pts
@@ -6937,7 +6941,7 @@
 		)
 		(uuid "7c7798df-6966-4d54-b1b0-0dff3cce1f1b")
 	)
-	(hierarchical_label "USB"
+	(hierarchical_label "{STM32_USB}"
 		(shape input)
 		(at 213.36 83.82 0)
 		(effects
@@ -6970,7 +6974,7 @@
 		)
 		(uuid "a7bf592e-b16e-4aee-acc1-e80cc532e07b")
 	)
-	(hierarchical_label "CSI"
+	(hierarchical_label "{STM32_CSI}"
 		(shape input)
 		(at 264.16 83.82 0)
 		(effects
@@ -8331,6 +8335,10 @@
 		(instances
 			(project ""
 				(path "/4869b3db-9bd3-4900-9c3c-205f01100fa6/892c9571-9add-4117-8957-9fe1c7a06a87"
+					(reference "U1")
+					(unit 1)
+				)
+				(path "/4869b3db-9bd3-4900-9c3c-205f01100fa6/c0d269f5-1305-43b7-953b-2a8e8325bf5b"
 					(reference "U1")
 					(unit 1)
 				)

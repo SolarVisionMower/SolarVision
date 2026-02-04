@@ -626,12 +626,16 @@
       "Analog_Unit"
     ],
     [
-      "92c981bf-56e1-4e95-a37d-e89de9975c16",
-      "Connectors"
-    ],
-    [
       "6b6613e8-e0b6-4175-a413-8c927f6f4831",
       "XSPI NOR Flash"
+    ],
+    [
+      "0e02e1f8-d407-46cc-9aff-8c3a7585017c",
+      "FMC_SDRAM"
+    ],
+    [
+      "92c981bf-56e1-4e95-a37d-e89de9975c16",
+      "Connectors"
     ]
   ],
   "text_variables": {}

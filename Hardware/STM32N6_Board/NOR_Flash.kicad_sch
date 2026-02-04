@@ -2727,6 +2727,16 @@
 		)
 		(uuid "d152c87a-077d-44c7-be84-b8400afd326d")
 	)
+	(bus
+		(pts
+			(xy 195.58 48.26) (xy 218.44 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d37b4e94-a5a7-499b-87e3-95b43b2d8535")
+	)
 	(wire
 		(pts
 			(xy 127 40.64) (xy 118.11 40.64)
@@ -2856,16 +2866,6 @@
 			(type default)
 		)
 		(uuid "f9609af0-9169-4282-84aa-6e94d281edff")
-	)
-	(wire
-		(pts
-			(xy 195.58 48.26) (xy 218.44 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff1cd3ef-af58-490f-abb5-1a36257494e7")
 	)
 	(label "~{RESET}"
 		(at 49.53 63.5 0)
@@ -3017,7 +3017,7 @@
 		)
 		(uuid "9ac45d84-0804-4a96-8fea-2b26395c53f9")
 	)
-	(label "PN[0..12]"
+	(label "{XSPI}"
 		(at 195.58 48.26 0)
 		(effects
 			(font
@@ -3130,7 +3130,7 @@
 		)
 		(uuid "fd2a3fd6-ae1d-4f30-9dd0-848ee219c75a")
 	)
-	(hierarchical_label "XSPI"
+	(hierarchical_label "{XSPI}"
 		(shape bidirectional)
 		(at 218.44 48.26 0)
 		(effects

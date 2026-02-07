@@ -4939,10 +4939,6 @@
 		(uuid "cb58d3ce-3c10-410a-b438-9b723ffd6869")
 	)
 	(no_connect
-		(at 104.14 128.27)
-		(uuid "d79f9e3e-afeb-4a93-bee7-64f22bd20ab0")
-	)
-	(no_connect
 		(at 104.14 151.13)
 		(uuid "ddb4e505-49be-4935-84e7-a3d222deb0c4")
 	)
@@ -7411,16 +7407,6 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 87.63) (xy 40.64 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8060d467-92c6-430c-af26-4b221733e2c5")
-	)
-	(wire
-		(pts
 			(xy 33.02 130.81) (xy 40.64 130.81)
 		)
 		(stroke
@@ -8929,6 +8915,16 @@
 		)
 		(uuid "ea9adb36-cf18-429d-81be-c46dce6f8a5f")
 	)
+	(wire
+		(pts
+			(xy 33.02 87.63) (xy 40.64 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec1309a1-c853-4a14-a5cb-415d03feb6d4")
+	)
 	(bus
 		(pts
 			(xy 140.97 100.33) (xy 140.97 102.87)
@@ -9121,7 +9117,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 128.27) (xy 104.14 128.27)
+			(xy 96.52 128.27) (xy 116.84 128.27)
 		)
 		(stroke
 			(width 0)
@@ -11059,7 +11055,7 @@
 		)
 		(uuid "9a4096b0-d3ee-4ddb-8fcf-fcc31b0bcc7e")
 	)
-	(label "PA6"
+	(label "PB4"
 		(at 198.12 31.75 180)
 		(effects
 			(font
@@ -11120,12 +11116,12 @@
 		(uuid "9dcfe7cf-a50f-480a-b405-21c287d16c6b")
 	)
 	(label "LED_BUILTIN"
-		(at 19.05 87.63 0)
+		(at 116.84 128.27 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "9f6bad77-d64f-44d1-9492-db675f2a2658")
 	)
@@ -12476,7 +12472,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 242.57 95.25 0)
 			(effects
 				(font
@@ -12544,7 +12540,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 151.13 153.67 0)
 			(effects
 				(font
@@ -12679,7 +12675,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 160.02 177.8 0)
 			(effects
 				(font
@@ -12748,7 +12744,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 242.57 97.79 0)
 			(effects
 				(font
@@ -12816,7 +12812,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "STM32N6_Footprints:STM32N657I0H3Q_VFBGA178_14x14"
 			(at 68.58 40.64 0)
 			(effects
 				(font
@@ -13483,7 +13479,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "STM32N6_Footprints:48MHz_Q22FA12800150_4Pin_2.0z1.6mm"
 			(at 151.13 181.61 0)
 			(effects
 				(font
@@ -13692,7 +13688,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 242.57 92.71 0)
 			(effects
 				(font
@@ -13761,7 +13757,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 261.62 137.16 0)
 			(effects
 				(font
@@ -13830,7 +13826,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 254 137.16 90)
 			(effects
 				(font
@@ -13908,7 +13904,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 151.13 161.29 0)
 			(effects
 				(font
@@ -13978,7 +13974,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "STM32N6_Footprints:32kHz_SC-20S_2Pin_2.05x1.2mm"
 			(at 142.24 157.48 0)
 			(effects
 				(font
@@ -14047,7 +14043,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 160.02 185.42 0)
 			(effects
 				(font
@@ -14116,7 +14112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 242.57 90.17 0)
 			(effects
 				(font

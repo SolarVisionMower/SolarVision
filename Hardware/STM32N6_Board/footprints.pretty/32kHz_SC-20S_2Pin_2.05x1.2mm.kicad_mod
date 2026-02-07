@@ -1,0 +1,155 @@
+(footprint "32kHz_SC-20S_2Pin_2.05x1.2mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "2012/2, Crystal, 2.0x1.2mm package, SMD, hand-soldering, generated with kicad-footprint-generator make_crystal.py, http://txccrystal.com/images/pdf/9ht11.pdf")
+	(property "Reference" "REF**"
+		(at 0 -1.8 0)
+		(layer "F.SilkS")
+		(uuid "c2e68445-5758-4df7-9e61-76d0edcadaf7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "32kHz_SC-20S_2Pin_2.05x1.2mm"
+		(at 0 1.8 0)
+		(layer "F.Fab")
+		(uuid "2ebb76e9-000a-4316-ade4-04271466952f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f6f54c3a-f366-4b7c-9cb4-463a3aa0016b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9559d4e3-42a9-4daa-af12-4d06f013379d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.71 -0.86)
+		(end -1.71 0.86)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "02c30c9f-d203-48f9-a6ef-c37bbdf8202d")
+	)
+	(fp_line
+		(start -1.71 0.86)
+		(end 1.26 0.86)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "29dfbe0a-4727-4673-aa1b-f2cc59074065")
+	)
+	(fp_line
+		(start 1.26 -0.86)
+		(end -1.71 -0.86)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c0223991-8915-4332-be0d-7253f4dd56a8")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0.2 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Adhes")
+		(uuid "9ec27779-980e-4435-8d70-976009d65702")
+	)
+	(fp_rect
+		(start -1.91 -1.1)
+		(end 1.71 1.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "fdf28a67-e3ca-4364-a277-82d5816b7c26")
+	)
+	(fp_poly
+		(pts
+			(xy -1 -0.6) (xy -1 0.3) (xy -0.7 0.6) (xy 1 0.6) (xy 1 -0.6)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "721c6670-cbaa-411f-b1e4-2970487ee426")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "5a4e6be9-eb74-4f5d-bece-d354f93f42bf")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.75 0)
+		(size 1 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.238095)
+		(uuid "7c5f9f15-948e-4537-a2a0-96552f0577dd")
+	)
+	(pad "2" smd roundrect
+		(at 0.75 0)
+		(size 1 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.238095)
+		(uuid "fd588d10-1277-4049-ba0b-5381e1156849")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_2012-2Pin_2.0x1.2mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

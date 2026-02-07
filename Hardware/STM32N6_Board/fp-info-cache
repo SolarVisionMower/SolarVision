@@ -1,4 +1,4 @@
-25606410223964311
+25613493193603179
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -93744,14 +93744,35 @@ rotary encoder illuminated switch vertical
 9
 8
 STM32N6_Footprints
-AMPHENOL_F305-1A7H1-11015-E100
+32kHz_SC-20S_2Pin_2.05x1.2mm
+2012/2, Crystal, 2.0x1.2mm package, SMD, hand-soldering, generated with kicad-footprint-generator make_crystal.py, http://txccrystal.com/images/pdf/9ht11.pdf
+
+0
+2
+2
+STM32N6_Footprints
+48MHz_Q22FA12800150_4Pin_2.0z1.6mm
+SMD2016/4, Crystal, 2.0x1.6mm package, SMD, generated with kicad-footprint-generator make_crystal.py, http://www.q-crystal.com/upload/5/2015552223166229.pdf
+
+0
+4
+4
+STM32N6_Footprints
+AMPHENOL_12401832E402A
+
+
+0
+28
+28
+STM32N6_Footprints
+AMPHENOL_SFW15R-2STE1LF
 
 
 0
 17
 17
 STM32N6_Footprints
-IS42S16800F-7TLI_SOP80P1176X120-54N
+IS42S16800F-7BL_BGA54C80P9X9_800X800X120
 
 
 0
@@ -93771,6 +93792,13 @@ STM32N657I0H3Q_VFBGA178_14x14
 0
 178
 178
+STM32N6_Footprints
+Schottky_DIOM4325X250N
+
+
+0
+2
+2
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf

@@ -1031,8 +1031,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D7"
-				(at -6.604 0 90)
+			(property "Reference" "D"
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1040,7 +1040,7 @@
 				)
 			)
 			(property "Value" "D_TVS"
-				(at -9.144 0 90)
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5892,7 +5892,7 @@
 		)
 		(uuid "13f00f06-ecd5-4b75-a6e9-0c1064f864fa")
 	)
-	(text "- VDD has 7 capacitors because:\n    - 3 VDD pins\n    - 2 VDDIO3 pins\n    - 2 VDDIO4 pins\n- VDDCORE has 6 capacitors because:\n    - 5 VDDCORE pins\n    - 1 VDDCSI pin\n- VDDA1V8 has 4 capacitors because:\n    - Powering ADC, USB, PLL, and CSI\n\n- Power input to BOARD is 5V @ 3A max\n- Total of 5 LDOs and Bucks for 3v3 and 1v8\n    - Buck converter for 3v3 VDD, always on\n    - LDO for 1v8 VDDA18AON, always on\n    - LDO for 3v3 VDD3V3 (USB pin)\n    - LDO for 1v8 VDDA1V8\n    - LDO for 1v8 VDD1V8\n- All LDO's and Bucks should be adjustable\n   and with enable pins. Permanently enable\n   VDD and VDDA18AON. Others enabled by\n   PWR_ON.\n\n- Ferrite bead (FB1) requirements:\n    - 50 Ohms at 100MHz\n    - At least 400mA I_DC\n    - Max 0.1 Ohms DCR\n\n- VREFP is reference for internal ADC.\n   J1 is a jumper to VDDA1V8, use separate\n   reference if desired.\n\n- Forgot to add in symbols:\n    - LDO's are SPX5205-ADJ\n    - Buck is MC34064-ACD-TR\n    - Schottky diode is 1A 40V per the\n       datasheet. Preferably 1206 package\n    - Ferrite will be ILB1206ER500V\n\n- All decoupling caps will be 1206 imperial\n- All resistors will be 0805 imperial\n- TVS diode clamping voltages must not\n   exceed 1.935 and 3.6V clamping for 1v8\n   and 3v3 supplies respectively."
+	(text "- VDD has 7 capacitors because:\n    - 3 VDD pins\n    - 2 VDDIO3 pins\n    - 2 VDDIO4 pins\n- VDDCORE has 6 capacitors because:\n    - 5 VDDCORE pins\n    - 1 VDDCSI pin\n- VDDA1V8 has 4 capacitors because:\n    - Powering ADC, USB, PLL, and CSI\n\n- Power input to BOARD is 5V @ 3A max\n- Total of 5 LDOs and Bucks for 3v3 and 1v8\n    - Buck converter for 3v3 VDD, always on\n    - LDO for 1v8 VDDA18AON, always on\n    - LDO for 3v3 VDD3V3 (USB pin)\n    - LDO for 1v8 VDDA1V8\n    - LDO for 1v8 VDD1V8\n- All LDO's and Bucks should be adjustable\n   and with enable pins. Permanently enable\n   VDD and VDDA18AON. Others enabled by\n   PWR_ON.\n\n- Ferrite bead (FB1) requirements:\n    - 50 Ohms at 100MHz\n    - At least 400mA I_DC\n    - Max 0.1 Ohms DCR\n\n- VREFP is reference for internal ADC.\n   J1 is a jumper to VDDA1V8, use separate\n   reference if desired.\n\n- Forgot to add in symbols:\n    - LDO's are SPX5205-ADJ\n    - Buck is MC34064-ACD-TR\n    - Schottky diode is 1A 40V per the\n       datasheet. Preferably 1206 package\n    - Ferrite will be ILB1206ER500V\n\n- All decoupling caps will be 0805 imperial\n- All resistors will be 0805 imperial\n- TVS diode clamping voltages must not\n   exceed 1.935 and 3.6V clamping for 1v8\n   and 3v3 supplies respectively."
 		(exclude_from_sim no)
 		(at 229.87 24.13 0)
 		(effects
@@ -6029,12 +6029,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "217631a1-7b13-4603-9428-69f7367ba5c2")
-	)
-	(junction
-		(at 147.32 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "234f9a68-bb84-45ea-8689-ff6ffa5b41ee")
 	)
 	(junction
 		(at 162.56 66.04)
@@ -6247,12 +6241,6 @@
 		(uuid "5e9870f0-7a00-4001-9b39-faaf0c308449")
 	)
 	(junction
-		(at 154.94 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "628f640a-81ff-4aaf-95fc-f70dcf541137")
-	)
-	(junction
 		(at 24.13 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6317,12 +6305,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7eec5fba-c9ab-487a-bcea-05589cda9ac0")
-	)
-	(junction
-		(at 143.51 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7f6dd12c-5c0b-41e2-b80a-208e4f0d8118")
 	)
 	(junction
 		(at 204.47 36.83)
@@ -6443,12 +6425,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a87f83ff-dcfe-4364-a005-dce686cdd40e")
-	)
-	(junction
-		(at 151.13 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a8eab73f-75a3-4795-bb70-ab3458106e76")
 	)
 	(junction
 		(at 33.02 68.58)
@@ -6668,16 +6644,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 186.69) (xy 154.94 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00a1b624-8ca7-40af-9dec-c6adb63a799a")
-	)
-	(wire
-		(pts
 			(xy 73.66 104.14) (xy 76.2 104.14)
 		)
 		(stroke
@@ -6798,7 +6764,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 179.07) (xy 143.51 179.07)
+			(xy 129.54 173.99) (xy 138.43 173.99)
 		)
 		(stroke
 			(width 0)
@@ -7025,16 +6991,6 @@
 			(type default)
 		)
 		(uuid "17f8b065-8385-4df8-ac60-c3eb92354ae2")
-	)
-	(wire
-		(pts
-			(xy 128.27 171.45) (xy 154.94 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1858ba89-f174-4c48-9df0-9e664a3eef00")
 	)
 	(wire
 		(pts
@@ -7268,16 +7224,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 171.45) (xy 154.94 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "262be39e-cfda-49e3-8d1c-040bd2c9ce5f")
-	)
-	(wire
-		(pts
 			(xy 50.8 170.18) (xy 59.69 170.18)
 		)
 		(stroke
@@ -7478,16 +7424,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 186.69) (xy 143.51 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "369d2ab3-1fa3-457a-961e-995505edd122")
-	)
-	(wire
-		(pts
 			(xy 179.07 82.55) (xy 186.69 82.55)
 		)
 		(stroke
@@ -7545,26 +7481,6 @@
 			(type default)
 		)
 		(uuid "389765f8-2a62-4873-b635-1c2826e4688f")
-	)
-	(wire
-		(pts
-			(xy 158.75 186.69) (xy 158.75 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "391fd0eb-bae3-4a4a-8a6f-46c2b1fe1252")
-	)
-	(wire
-		(pts
-			(xy 158.75 187.96) (xy 154.94 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3945ac58-5e4f-484b-b991-3f5b4d7dff29")
 	)
 	(wire
 		(pts
@@ -7808,16 +7724,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 187.96) (xy 137.16 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d1a9dec-e08a-49f0-a38a-cec1932697c8")
-	)
-	(wire
-		(pts
 			(xy 72.39 177.8) (xy 81.28 177.8)
 		)
 		(stroke
@@ -8035,16 +7941,6 @@
 			(type default)
 		)
 		(uuid "5b689ff6-7ebd-48c8-be45-39505ad62346")
-	)
-	(wire
-		(pts
-			(xy 147.32 186.69) (xy 147.32 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5bb5899c-207e-47d9-8052-fefcb86fe996")
 	)
 	(wire
 		(pts
@@ -8415,16 +8311,6 @@
 			(type default)
 		)
 		(uuid "72ea8deb-0c2e-4a46-b9a8-64446471b805")
-	)
-	(wire
-		(pts
-			(xy 128.27 173.99) (xy 151.13 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72ec7836-6b87-4b05-8790-543354d7e7df")
 	)
 	(wire
 		(pts
@@ -9258,16 +9144,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 168.91) (xy 158.75 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab9faa30-950c-4c4a-bbb8-8e50419d1eab")
-	)
-	(wire
-		(pts
 			(xy 133.35 44.45) (xy 133.35 46.99)
 		)
 		(stroke
@@ -9325,16 +9201,6 @@
 			(type default)
 		)
 		(uuid "aea9b7b5-b620-4c88-a21b-3d09020cf343")
-	)
-	(wire
-		(pts
-			(xy 154.94 187.96) (xy 151.13 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aed78e51-4a45-4432-8cc2-bd89cc237ef0")
 	)
 	(wire
 		(pts
@@ -9465,16 +9331,6 @@
 			(type default)
 		)
 		(uuid "b6704a7c-54d7-47a9-b694-be29468c040a")
-	)
-	(wire
-		(pts
-			(xy 151.13 173.99) (xy 151.13 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b70399eb-b351-4d8f-b5e1-73eec76a47c0")
 	)
 	(wire
 		(pts
@@ -9648,16 +9504,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 186.69) (xy 151.13 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5110653-626d-4b74-a15f-59e8c833c123")
-	)
-	(wire
-		(pts
 			(xy 50.8 138.43) (xy 59.69 138.43)
 		)
 		(stroke
@@ -9708,16 +9554,6 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 168.91) (xy 158.75 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7539d87-7aca-4478-b0bc-db13a33155d7")
-	)
-	(wire
-		(pts
 			(xy 256.54 154.94) (xy 260.35 154.94)
 		)
 		(stroke
@@ -9725,6 +9561,16 @@
 			(type default)
 		)
 		(uuid "c8189350-8bbd-4410-a517-43c1a56eda77")
+	)
+	(wire
+		(pts
+			(xy 146.05 173.99) (xy 153.67 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8a1a425-9892-4ef0-9588-bc049a506434")
 	)
 	(wire
 		(pts
@@ -9925,16 +9771,6 @@
 			(type default)
 		)
 		(uuid "d7809a98-4316-4a60-a44d-407d7228bd6c")
-	)
-	(wire
-		(pts
-			(xy 147.32 176.53) (xy 147.32 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d841df7d-664b-4ec1-b4b7-f7c00c2feb9e")
 	)
 	(wire
 		(pts
@@ -10238,16 +10074,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 187.96) (xy 147.32 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea6d85e2-3708-4815-967f-15efdfd36cbc")
-	)
-	(wire
-		(pts
 			(xy 125.73 72.39) (xy 125.73 74.93)
 		)
 		(stroke
@@ -10325,16 +10151,6 @@
 			(type default)
 		)
 		(uuid "ede199ed-cd2b-4001-bf45-141fe0906a57")
-	)
-	(wire
-		(pts
-			(xy 128.27 176.53) (xy 147.32 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee7e69d6-5ae1-4714-9149-ea2195ec6dc1")
 	)
 	(wire
 		(pts
@@ -10465,16 +10281,6 @@
 			(type default)
 		)
 		(uuid "f26c946a-8468-45c3-8b26-48450b221e3c")
-	)
-	(wire
-		(pts
-			(xy 147.32 187.96) (xy 143.51 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f2ab8528-6c1c-487d-a057-52005be1c2bc")
 	)
 	(wire
 		(pts
@@ -10767,16 +10573,6 @@
 		)
 		(uuid "27294876-d54c-4f58-872f-087deaee2a85")
 	)
-	(label "VDD3V3"
-		(at 128.27 176.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2f5fa736-9478-4c1a-9bf4-880f88b0a679")
-	)
 	(label "VDDA1V8_AON"
 		(at 30.48 58.42 180)
 		(effects
@@ -10867,16 +10663,6 @@
 			(justify left bottom)
 		)
 		(uuid "6a673820-82e0-440c-850a-ed6c1597433a")
-	)
-	(label "VDDA1V8"
-		(at 128.27 171.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6e890ddc-ed75-4aaa-9b7b-7751e81c2f95")
 	)
 	(label "VDD"
 		(at 205.74 132.08 0)
@@ -10998,16 +10784,6 @@
 		)
 		(uuid "97ae38b9-fea0-41fb-b94b-fb7980ad4f1d")
 	)
-	(label "VDD"
-		(at 128.27 179.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9ae7bb7a-025b-4e44-9a87-a288f7363016")
-	)
 	(label "VLXSMPS"
 		(at 78.74 86.36 0)
 		(effects
@@ -11118,16 +10894,6 @@
 		)
 		(uuid "e4ed894d-1201-468c-a0ce-6db2795a7dc1")
 	)
-	(label "VDDA1V8_AON"
-		(at 128.27 168.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ea5024fa-4ccb-4cb1-9766-b0ad2182f5ea")
-	)
 	(label "VFBSMPS"
 		(at 160.02 73.66 180)
 		(effects
@@ -11137,16 +10903,6 @@
 			(justify right bottom)
 		)
 		(uuid "ebc21707-d279-4edb-bd46-014c1c25f229")
-	)
-	(label "VDD1V8"
-		(at 128.27 173.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f6bcd174-b4d8-406f-a2bf-0ac038fb578e")
 	)
 	(global_label "VDDA1V8"
 		(shape input)
@@ -11297,7 +11053,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 105.41 173.99 0)
 			(effects
 				(font
@@ -11435,7 +11191,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 125.73 41.91 0)
 			(effects
 				(font
@@ -11505,7 +11261,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 181.61 41.91 0)
 			(effects
 				(font
@@ -11640,7 +11396,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 			(at 36.83 171.45 0)
 			(effects
 				(font
@@ -11717,7 +11473,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "STM32N6_Footprints:STM32N657I0H3Q_VFBGA178_14x14"
 			(at 54.61 31.75 0)
 			(effects
 				(font
@@ -12382,7 +12138,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 182.88 66.04 0)
 			(effects
 				(font
@@ -12452,7 +12208,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 175.26 66.04 0)
 			(effects
 				(font
@@ -12523,7 +12279,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 110.49 59.69 0)
 			(effects
 				(font
@@ -12593,7 +12349,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 50.8 173.99 0)
 			(effects
 				(font
@@ -12636,75 +12392,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_TVS")
-		(at 147.32 182.88 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "28a99a4f-6ff9-4bf6-a764-037f94492388")
-		(property "Reference" "D8"
-			(at 147.32 189.484 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D_TVS"
-			(at 147.32 192.024 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 147.32 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 147.32 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "198f4852-ac6f-4a91-bfa7-f3a0b6ab481d")
-		)
-		(pin "2"
-			(uuid "62adb41e-98dc-4a65-b4b3-89b93c5b245e")
-		)
-		(instances
-			(project "STM32N6_Board"
-				(path "/4869b3db-9bd3-4900-9c3c-205f01100fa6/c0d269f5-1305-43b7-953b-2a8e8325bf5b"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "C_Small_US_2")
 		(lib_id "Device:C_Small_US")
 		(at 110.49 77.47 0)
@@ -12733,7 +12420,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 110.49 77.47 0)
 			(effects
 				(font
@@ -12777,7 +12464,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 137.16 187.96 0)
+		(at 153.67 173.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12786,7 +12473,7 @@
 		(fields_autoplaced yes)
 		(uuid "294e868d-4b2e-491c-96f0-dcfccff9ae29")
 		(property "Reference" "#PWR069"
-			(at 137.16 194.31 0)
+			(at 153.67 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12795,7 +12482,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 137.16 193.04 0)
+			(at 153.67 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12803,7 +12490,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 187.96 0)
+			(at 153.67 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12812,7 +12499,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 187.96 0)
+			(at 153.67 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12821,7 +12508,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 137.16 187.96 0)
+			(at 153.67 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12870,7 +12557,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 185.42 143.51 0)
 			(effects
 				(font
@@ -12940,7 +12627,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 175.26 147.32 0)
 			(effects
 				(font
@@ -13078,7 +12765,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 118.11 59.69 0)
 			(effects
 				(font
@@ -13148,7 +12835,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 50.8 149.86 0)
 			(effects
 				(font
@@ -13218,7 +12905,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 142.24 88.9 0)
 			(effects
 				(font
@@ -13289,7 +12976,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 198.12 66.04 0)
 			(effects
 				(font
@@ -13359,7 +13046,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 50.8 181.61 0)
 			(effects
 				(font
@@ -13428,7 +13115,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 148.59 151.13 0)
 			(effects
 				(font
@@ -13735,6 +13422,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 129.54 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4930e329-8e80-4439-9e06-6e2aa881baf4")
+		(property "Reference" "#PWR060"
+			(at 129.54 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 129.54 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 129.54 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63579ff3-4924-4165-bb7b-0eae7726850e")
+		)
+		(instances
+			(project "STM32N6_Board"
+				(path "/4869b3db-9bd3-4900-9c3c-205f01100fa6/c0d269f5-1305-43b7-953b-2a8e8325bf5b"
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 36.83 186.69 0)
 		(unit 1)
@@ -13826,7 +13579,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
 			(at 148.59 135.89 0)
 			(effects
 				(font
@@ -13982,7 +13735,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 102.87 59.69 0)
 			(effects
 				(font
@@ -14157,75 +13910,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_TVS")
-		(at 143.51 182.88 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "54bef3b5-400a-48c3-9c27-17d76de08389")
-		(property "Reference" "D7"
-			(at 143.51 189.484 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D_TVS"
-			(at 143.51 192.024 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 143.51 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 143.51 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 143.51 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "60b79c92-d4a9-40d6-b65c-ba5e8a2e740a")
-		)
-		(pin "2"
-			(uuid "83e52fad-d877-4494-bbf5-069a9feee710")
-		)
-		(instances
-			(project "STM32N6_Board"
-				(path "/4869b3db-9bd3-4900-9c3c-205f01100fa6/c0d269f5-1305-43b7-953b-2a8e8325bf5b"
-					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "C_Small_US_2")
 		(lib_id "Device:C_Small_US")
 		(at 181.61 101.6 180)
@@ -14254,7 +13938,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 181.61 101.6 0)
 			(effects
 				(font
@@ -14324,7 +14008,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 173.99 41.91 0)
 			(effects
 				(font
@@ -14592,7 +14276,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 166.37 41.91 0)
 			(effects
 				(font
@@ -14660,7 +14344,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 264.16 154.94 0)
 			(effects
 				(font
@@ -15069,7 +14753,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 254 144.78 0)
 			(effects
 				(font
@@ -15206,7 +14890,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 152.4 105.41 0)
 			(effects
 				(font
@@ -15276,7 +14960,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 175.26 139.7 0)
 			(effects
 				(font
@@ -15346,7 +15030,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 189.23 41.91 0)
 			(effects
 				(font
@@ -15550,7 +15234,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 140.97 59.69 0)
 			(effects
 				(font
@@ -15620,7 +15304,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 119.38 105.41 0)
 			(effects
 				(font
@@ -15657,6 +15341,74 @@
 			(project "STM32N6_Board"
 				(path "/4869b3db-9bd3-4900-9c3c-205f01100fa6/c0d269f5-1305-43b7-953b-2a8e8325bf5b"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_TVS")
+		(at 142.24 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e4bbf74-9229-449e-8172-190f8002fdf9")
+		(property "Reference" "D7"
+			(at 142.24 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_TVS"
+			(at 142.24 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 142.24 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
+			(at 142.24 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "039d1e38-27a7-463e-95d9-1148b9095bff")
+		)
+		(pin "1"
+			(uuid "d21ee439-b3ab-4865-b65d-85edd2f32990")
+		)
+		(instances
+			(project ""
+				(path "/4869b3db-9bd3-4900-9c3c-205f01100fa6/c0d269f5-1305-43b7-953b-2a8e8325bf5b"
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -15820,7 +15572,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 254 154.94 0)
 			(effects
 				(font
@@ -15891,7 +15643,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 102.87 77.47 0)
 			(effects
 				(font
@@ -15962,7 +15714,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 118.11 41.91 0)
 			(effects
 				(font
@@ -16033,7 +15785,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 102.87 41.91 0)
 			(effects
 				(font
@@ -16103,7 +15855,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 128.27 139.7 0)
 			(effects
 				(font
@@ -16238,7 +15990,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
 			(at 209.55 34.29 0)
 			(effects
 				(font
@@ -16306,7 +16058,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 30.48 101.6 0)
 			(effects
 				(font
@@ -16377,7 +16129,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 118.11 77.47 0)
 			(effects
 				(font
@@ -16446,7 +16198,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 189.23 82.55 0)
 			(effects
 				(font
@@ -16516,7 +16268,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 172.72 69.85 0)
 			(effects
 				(font
@@ -16585,7 +16337,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 175.26 57.15 0)
 			(effects
 				(font
@@ -16654,7 +16406,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 118.11 93.98 0)
 			(effects
 				(font
@@ -16724,7 +16476,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 105.41 139.7 0)
 			(effects
 				(font
@@ -16993,7 +16745,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "STM32N6_Footprints:Schottky_DIOM4325X250N"
 			(at 171.45 129.54 0)
 			(effects
 				(font
@@ -17030,75 +16782,6 @@
 			(project "STM32N6_Board"
 				(path "/4869b3db-9bd3-4900-9c3c-205f01100fa6/c0d269f5-1305-43b7-953b-2a8e8325bf5b"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 158.75 182.88 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a0370a21-0f9d-4196-a8e0-7ddc08d4cc6f")
-		(property "Reference" "D11"
-			(at 158.75 189.484 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D_TVS"
-			(at 158.75 192.024 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 158.75 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 158.75 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 158.75 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "009e9add-f9ae-4447-a375-9ea9d4b28cff")
-		)
-		(pin "2"
-			(uuid "f0d67ab2-b89f-4165-87fe-bf4ea25085b6")
-		)
-		(instances
-			(project "STM32N6_Board"
-				(path "/4869b3db-9bd3-4900-9c3c-205f01100fa6/c0d269f5-1305-43b7-953b-2a8e8325bf5b"
-					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -17196,7 +16879,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 			(at 36.83 139.7 0)
 			(effects
 				(font
@@ -17343,7 +17026,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 133.35 59.69 0)
 			(effects
 				(font
@@ -17477,7 +17160,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
 			(at 165.1 135.89 0)
 			(effects
 				(font
@@ -17614,7 +17297,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 114.3 177.8 0)
 			(effects
 				(font
@@ -17685,7 +17368,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 110.49 41.91 0)
 			(effects
 				(font
@@ -17756,7 +17439,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 133.35 41.91 0)
 			(effects
 				(font
@@ -17824,7 +17507,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 			(at 91.44 171.45 0)
 			(effects
 				(font
@@ -17904,7 +17587,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 190.5 66.04 0)
 			(effects
 				(font
@@ -18038,7 +17721,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
 			(at 166.37 66.04 0)
 			(effects
 				(font
@@ -18106,7 +17789,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
 			(at 189.23 98.298 90)
 			(effects
 				(font
@@ -18149,75 +17832,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_TVS")
-		(at 151.13 182.88 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c07aec85-d69b-4123-a6bc-c7f42b73b94a")
-		(property "Reference" "D9"
-			(at 151.13 189.484 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D_TVS"
-			(at 151.13 192.024 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 151.13 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 151.13 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 151.13 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "85ee0e81-64db-4cba-bede-1ff6831feeda")
-		)
-		(pin "2"
-			(uuid "5e70c21b-ce45-4b5d-8a8a-5fb71ba38e14")
-		)
-		(instances
-			(project "STM32N6_Board"
-				(path "/4869b3db-9bd3-4900-9c3c-205f01100fa6/c0d269f5-1305-43b7-953b-2a8e8325bf5b"
-					(reference "D9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 167.64 57.15 90)
 		(unit 1)
@@ -18243,7 +17857,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 167.64 57.15 0)
 			(effects
 				(font
@@ -18311,7 +17925,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 			(at 91.44 137.16 0)
 			(effects
 				(font
@@ -18390,7 +18004,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 196.85 41.91 0)
 			(effects
 				(font
@@ -18528,7 +18142,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 148.59 41.91 0)
 			(effects
 				(font
@@ -18599,7 +18213,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 125.73 77.47 0)
 			(effects
 				(font
@@ -18670,7 +18284,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 165.1 176.53 0)
 			(effects
 				(font
@@ -18713,75 +18327,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_TVS")
-		(at 154.94 182.88 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cc907d34-022d-485d-a85c-d69140f854a4")
-		(property "Reference" "D10"
-			(at 154.94 189.484 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D_TVS"
-			(at 154.94 192.024 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 154.94 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 154.94 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 154.94 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "870ceab0-2f47-4fca-a18d-eabb60225bf2")
-		)
-		(pin "2"
-			(uuid "5e32ff28-a426-4409-a446-f73c63fa8b3c")
-		)
-		(instances
-			(project "STM32N6_Board"
-				(path "/4869b3db-9bd3-4900-9c3c-205f01100fa6/c0d269f5-1305-43b7-953b-2a8e8325bf5b"
-					(reference "D10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "C_Small_US_4")
 		(lib_id "Device:C_Small_US")
 		(at 59.69 177.8 180)
@@ -18810,7 +18355,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 59.69 177.8 0)
 			(effects
 				(font
@@ -18881,7 +18426,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 125.73 59.69 0)
 			(effects
 				(font
@@ -19016,7 +18561,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 264.16 144.78 0)
 			(effects
 				(font
@@ -19163,7 +18708,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 59.69 146.05 0)
 			(effects
 				(font
@@ -19233,7 +18778,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 105.41 147.32 0)
 			(effects
 				(font
@@ -19370,7 +18915,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 114.3 143.51 0)
 			(effects
 				(font
@@ -19440,7 +18985,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 204.47 41.91 0)
 			(effects
 				(font
@@ -19578,7 +19123,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 140.97 41.91 0)
 			(effects
 				(font
@@ -19648,7 +19193,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 105.41 181.61 0)
 			(effects
 				(font
@@ -19718,7 +19263,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 50.8 142.24 0)
 			(effects
 				(font
@@ -19855,7 +19400,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 149.86 88.9 0)
 			(effects
 				(font

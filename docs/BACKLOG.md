@@ -8,7 +8,9 @@
 - [dev/PhysicalDesign](https://github.com/SolarVisionMower/SolarVision/tree/dev/PhysicalDesign)
 - [dev/PCBDesign](https://github.com/SolarVisionMower/SolarVision/tree/dev/PCBDesign)
 - [dev/DataCollection](https://github.com/SolarVisionMower/SolarVision/tree/dev/DataCollection)
-- [dev/Programming](https://github.com/SolarVisionMower/SolarVision/tree/dev/Programming)
+- Programming
+    - [dev/ESP32](https://github.com/SolarVisionMower/SolarVision/tree/dev/ESP32)
+    - [dev/STM32](https://github.com/SolarVisionMower/SolarVision/tree/dev/STM32)
 - [dev/Testing](https://github.com/SolarVisionMower/SolarVision/tree/dev/Testing)
 - [dev/Shed](https://github.com/SolarVisionMower/SolarVision/tree/dev/Shed)
 - [dev/Redocking](https://github.com/SolarVisionMower/SolarVision/tree/dev/Redocking)
@@ -99,7 +101,7 @@ The YOLOv8 model running on the STM32 will be a fine-tuned segmentation model. O
 > Since this is a *software* related portion of the project, try to use dockerized tools, if applicable.
 > Also, try to write *modular* code, which can be improved upon at any instance.
 
-All development will be in the `dev/Programming` branch.
+All development will be in the `dev/ESP32` and `dev/STM32` branches.
 
 Below is how we anticipate control flow within our entire project:
 

@@ -1,0 +1,121 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "3bfaeaa6-4337-4b5f-9f42-0e28df6ecb69")
+	(paper "A4")
+	(lib_symbols)
+	(bus_alias "ESP32"
+		(members "GPIO[0..48]" "RST")
+	)
+	(sheet
+		(at 148.59 67.31)
+		(size 69.85 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 221 221 1.0000)
+		)
+		(uuid "7b06a695-7782-48c9-8e2f-bf71bfa2a546")
+		(property "Sheetname" "DWM1000"
+			(at 148.59 66.5984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DWM1000.kicad_sch"
+			(at 148.59 92.0246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mainboarddesign"
+				(path "/3bfaeaa6-4337-4b5f-9f42-0e28df6ecb69"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 74.93 71.12)
+		(size 44.45 49.53)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 221 221 1.0000)
+		)
+		(uuid "926af70a-c724-4f44-8d77-968ee776a06b")
+		(property "Sheetname" "ESP32S3"
+			(at 74.93 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ESP32S3.kicad_sch"
+			(at 74.93 121.2346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "{DWM1000}" input
+			(at 119.38 74.93 0)
+			(uuid "bbeb33a6-78a2-431d-bf9d-74d279446ea4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "{ESP32}" input
+			(at 119.38 78.74 0)
+			(uuid "25f2e599-17d7-491f-b2e6-ae8f4f0e430c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "mainboarddesign"
+				(path "/3bfaeaa6-4337-4b5f-9f42-0e28df6ecb69"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

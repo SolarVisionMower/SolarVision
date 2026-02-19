@@ -451,7 +451,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "mainboarddesign.kicad_pro",
+    "filename": "Main_Board.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -613,6 +613,14 @@
     [
       "3bfaeaa6-4337-4b5f-9f42-0e28df6ecb69",
       "Root"
+    ],
+    [
+      "926af70a-c724-4f44-8d77-968ee776a06b",
+      "ESP32S3"
+    ],
+    [
+      "7b06a695-7782-48c9-8e2f-bf71bfa2a546",
+      "DWM1000"
     ]
   ],
   "text_variables": {}

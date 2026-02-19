@@ -9,7 +9,49 @@
 		(members "GPIO[0..48]" "RST")
 	)
 	(sheet
-		(at 148.59 67.31)
+		(at 134.62 138.43)
+		(size 68.58 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 221 221 1.0000)
+		)
+		(uuid "0296f5c7-7ac8-4dea-9553-8a342eee9f44")
+		(property "Sheetname" "Connectors"
+			(at 134.62 137.7184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Connectors.kicad_sch"
+			(at 134.62 163.1446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Main_Board"
+				(path "/3bfaeaa6-4337-4b5f-9f42-0e28df6ecb69"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 133.35 102.87)
 		(size 69.85 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24,8 +66,8 @@
 			(color 0 221 221 1.0000)
 		)
 		(uuid "7b06a695-7782-48c9-8e2f-bf71bfa2a546")
-		(property "Sheetname" "DWM1000"
-			(at 148.59 66.5984 0)
+		(property "Sheetname" "STM32N6"
+			(at 133.35 102.1584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34,7 +76,7 @@
 			)
 		)
 		(property "Sheetfile" "DWM1000.kicad_sch"
-			(at 148.59 92.0246 0)
+			(at 133.35 127.5846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -43,7 +85,7 @@
 			)
 		)
 		(instances
-			(project "mainboarddesign"
+			(project "Main_Board"
 				(path "/3bfaeaa6-4337-4b5f-9f42-0e28df6ecb69"
 					(page "3")
 				)
@@ -51,8 +93,50 @@
 		)
 	)
 	(sheet
-		(at 74.93 71.12)
-		(size 44.45 49.53)
+		(at 132.08 69.85)
+		(size 72.39 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 221 221 1.0000)
+		)
+		(uuid "88b7e6bf-fd05-40a1-af72-862ac58f0449")
+		(property "Sheetname" "Power"
+			(at 132.08 69.1384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 132.08 94.5646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Main_Board"
+				(path "/3bfaeaa6-4337-4b5f-9f42-0e28df6ecb69"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 48.26 69.85)
+		(size 71.12 92.71)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -67,7 +151,7 @@
 		)
 		(uuid "926af70a-c724-4f44-8d77-968ee776a06b")
 		(property "Sheetname" "ESP32S3"
-			(at 74.93 70.4084 0)
+			(at 48.26 69.1384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -76,7 +160,7 @@
 			)
 		)
 		(property "Sheetfile" "ESP32S3.kicad_sch"
-			(at 74.93 121.2346 0)
+			(at 48.26 163.1446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -85,7 +169,7 @@
 			)
 		)
 		(pin "{DWM1000}" input
-			(at 119.38 74.93 0)
+			(at 119.38 116.84 0)
 			(uuid "bbeb33a6-78a2-431d-bf9d-74d279446ea4")
 			(effects
 				(font
@@ -95,7 +179,7 @@
 			)
 		)
 		(pin "{ESP32}" input
-			(at 119.38 78.74 0)
+			(at 119.38 120.65 0)
 			(uuid "25f2e599-17d7-491f-b2e6-ae8f4f0e430c")
 			(effects
 				(font
@@ -105,7 +189,7 @@
 			)
 		)
 		(instances
-			(project "mainboarddesign"
+			(project "Main_Board"
 				(path "/3bfaeaa6-4337-4b5f-9f42-0e28df6ecb69"
 					(page "2")
 				)

@@ -620,7 +620,15 @@
     ],
     [
       "7b06a695-7782-48c9-8e2f-bf71bfa2a546",
-      "DWM1000"
+      "STM32N6"
+    ],
+    [
+      "88b7e6bf-fd05-40a1-af72-862ac58f0449",
+      "Power"
+    ],
+    [
+      "0296f5c7-7ac8-4dea-9553-8a342eee9f44",
+      "Connectors"
     ]
   ],
   "text_variables": {}

@@ -8,9 +8,32 @@
 	(bus_alias "ESP32"
 		(members "GPIO[0..48]" "RST")
 	)
+	(text "Main Board\nHousing ESP32S3 and STM32N6\nFor the SolarVision Mower"
+		(exclude_from_sim no)
+		(at 17.272 18.034 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "e8aec933-7e3a-452e-95b0-9ac2addc62de")
+	)
+	(bus
+		(pts
+			(xy 80.01 105.41) (xy 92.71 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f98cf1a3-a228-46f4-a65f-85401562e3a7")
+	)
 	(sheet
-		(at 134.62 138.43)
-		(size 68.58 24.13)
+		(at 92.71 138.43)
+		(size 72.39 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -25,7 +48,7 @@
 		)
 		(uuid "0296f5c7-7ac8-4dea-9553-8a342eee9f44")
 		(property "Sheetname" "Connectors"
-			(at 134.62 137.7184 0)
+			(at 92.71 137.7184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34,7 +57,7 @@
 			)
 		)
 		(property "Sheetfile" "Connectors.kicad_sch"
-			(at 134.62 163.1446 0)
+			(at 92.71 163.1446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51,8 +74,8 @@
 		)
 	)
 	(sheet
-		(at 133.35 102.87)
-		(size 69.85 24.13)
+		(at 92.71 102.87)
+		(size 72.39 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -67,7 +90,7 @@
 		)
 		(uuid "7b06a695-7782-48c9-8e2f-bf71bfa2a546")
 		(property "Sheetname" "STM32N6"
-			(at 133.35 102.1584 0)
+			(at 92.71 102.1584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -76,7 +99,7 @@
 			)
 		)
 		(property "Sheetfile" "DWM1000.kicad_sch"
-			(at 133.35 127.5846 0)
+			(at 92.71 127.5846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -84,16 +107,26 @@
 				(justify left top)
 			)
 		)
+		(pin "{UART}" input
+			(at 92.71 105.41 180)
+			(uuid "a4d7a75a-cd1f-4d0e-824b-bc497e3467d7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "Main_Board"
 				(path "/3bfaeaa6-4337-4b5f-9f42-0e28df6ecb69"
-					(page "3")
+					(page "4")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 132.08 69.85)
+		(at 92.71 69.85)
 		(size 72.39 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -109,7 +142,7 @@
 		)
 		(uuid "88b7e6bf-fd05-40a1-af72-862ac58f0449")
 		(property "Sheetname" "Power"
-			(at 132.08 69.1384 0)
+			(at 92.71 69.1384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -118,7 +151,7 @@
 			)
 		)
 		(property "Sheetfile" "Power.kicad_sch"
-			(at 132.08 94.5646 0)
+			(at 92.71 94.5646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -129,14 +162,14 @@
 		(instances
 			(project "Main_Board"
 				(path "/3bfaeaa6-4337-4b5f-9f42-0e28df6ecb69"
-					(page "4")
+					(page "2")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 48.26 69.85)
-		(size 71.12 92.71)
+		(at 22.86 69.85)
+		(size 57.15 92.71)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -151,7 +184,7 @@
 		)
 		(uuid "926af70a-c724-4f44-8d77-968ee776a06b")
 		(property "Sheetname" "ESP32S3"
-			(at 48.26 69.1384 0)
+			(at 22.86 69.1384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -160,7 +193,7 @@
 			)
 		)
 		(property "Sheetfile" "ESP32S3.kicad_sch"
-			(at 48.26 163.1446 0)
+			(at 22.86 163.1446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -168,9 +201,9 @@
 				(justify left top)
 			)
 		)
-		(pin "{DWM1000}" input
-			(at 119.38 116.84 0)
-			(uuid "bbeb33a6-78a2-431d-bf9d-74d279446ea4")
+		(pin "{ESP32}" input
+			(at 80.01 142.24 0)
+			(uuid "104d1292-ff76-4b72-b3e2-36fe983a7baa")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -178,9 +211,9 @@
 				(justify right)
 			)
 		)
-		(pin "{ESP32}" input
-			(at 119.38 120.65 0)
-			(uuid "25f2e599-17d7-491f-b2e6-ae8f4f0e430c")
+		(pin "{UART}" input
+			(at 80.01 105.41 0)
+			(uuid "d9d0e507-7c96-4822-82aa-44e3e9443cc2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -191,7 +224,7 @@
 		(instances
 			(project "Main_Board"
 				(path "/3bfaeaa6-4337-4b5f-9f42-0e28df6ecb69"
-					(page "2")
+					(page "3")
 				)
 			)
 		)

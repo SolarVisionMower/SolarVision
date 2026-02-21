@@ -302,6 +302,41 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 212.09 15.24)
+		(end 281.94 116.84)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 8698c327-be22-463f-94d8-474e3038cd45)
+	)
+	(text "Design Notes"
+		(exclude_from_sim no)
+		(at 213.868 17.78 0)
+		(effects
+			(font
+				(size 3.302 3.302)
+				(thickness 0.4128)
+			)
+			(justify left top)
+		)
+		(uuid "3c8d177f-cedf-491d-ad4a-5a9333e5b3f6")
+	)
+	(text "- Delete all this and replace w/ whatever notes are relevant to the\n   schematic once the schematic is done.\n- Follow schematic diagram in docs/ESP32/Buck... datasheet when\n   making the schematic.\n- Any additional special new chips datasheet should be in docs\n   folder\n- Add anything else you want, ie status LEDs, decoupling capacitor,\n   etc. Arduino shield schematics are good examples\n- Any additional parts should be:\n    - Available on JLCPCB, in stock\n    - Put datasheet in docs/ESP32/ folder\n	- Follow schematic shown in datasheet if possible"
+		(exclude_from_sim no)
+		(at 213.36 23.114 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d087a5ca-98a4-4be5-be59-0e985107854c")
+	)
 	(symbol
 		(lib_id "ESP32-Symbols:LM2596DSADJG")
 		(at 105.41 67.31 0)

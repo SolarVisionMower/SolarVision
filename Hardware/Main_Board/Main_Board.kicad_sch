@@ -21,6 +21,16 @@
 		)
 		(uuid "e8aec933-7e3a-452e-95b0-9ac2addc62de")
 	)
+	(wire
+		(pts
+			(xy 80.01 76.2) (xy 92.71 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85fb8fcd-91be-41ad-8d45-0d125db10f6a")
+	)
 	(bus
 		(pts
 			(xy 80.01 105.41) (xy 92.71 105.41)
@@ -159,6 +169,16 @@
 				(justify left top)
 			)
 		)
+		(pin "TestLabel" input
+			(at 92.71 76.2 180)
+			(uuid "d9b020fe-ad06-4479-8a68-b205354dd3e4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "Main_Board"
 				(path "/3bfaeaa6-4337-4b5f-9f42-0e28df6ecb69"
@@ -214,6 +234,16 @@
 		(pin "{UART}" input
 			(at 80.01 105.41 0)
 			(uuid "d9d0e507-7c96-4822-82aa-44e3e9443cc2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TestLabel" input
+			(at 80.01 76.2 0)
+			(uuid "60700a9d-99b4-4509-9dac-a8da5cd2ce13")
 			(effects
 				(font
 					(size 1.27 1.27)

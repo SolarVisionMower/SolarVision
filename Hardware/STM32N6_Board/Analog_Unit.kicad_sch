@@ -4772,7 +4772,7 @@
 		(members "CKN" "CKP" "D0N" "D0P" "D1N" "D1P" "EN")
 	)
 	(bus_alias "STM32_USB"
-		(members "CC1" "CC2" "HSDP" "HSDM" "FAULT" "EN" "VBUS")
+		(members "CC1" "CC2" "HSDP" "HSDM" "FAULT" "EN_USB" "VBUS")
 	)
 	(rectangle
 		(start 177.8 66.04)
@@ -7144,7 +7144,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 255.27 33.02 0)
 			(effects
 				(font
@@ -7215,7 +7215,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 54.61 168.91 0)
 			(effects
 				(font
@@ -8438,7 +8438,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 255.27 53.34 0)
 			(effects
 				(font
@@ -8667,7 +8667,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 255.27 43.18 0)
 			(effects
 				(font
@@ -9163,7 +9163,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 50.8 0)
 			(effects
 				(font

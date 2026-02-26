@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "STM32N6_Symbols")(type "KiCad")(uri "${KIPRJMOD}/symbols/STM32N6_Symbols.kicad_sym")(options "")(descr ""))
   (lib (name "mm")(type "KiCad")(uri "C:/Users/bumpy/Downloads/12401832E402A/12401832E402A.kicad_sym")(options "")(descr ""))
+  (lib (name "Logo")(type "KiCad")(uri "${KIPRJMOD}/symbols/SolarVisionMower.kicad_sym")(options "")(descr ""))
 )

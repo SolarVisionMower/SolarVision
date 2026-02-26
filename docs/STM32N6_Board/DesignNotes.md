@@ -98,3 +98,11 @@ The STM32's **connection with the main board** will be through a set of two 18 p
 - Trace capacitance not to exceed 20pF, and trace length not to exceed 120mm (use resistor termination otherwise; not doing this).
 - External push button to reset the Flash. Once development is complete, R28 can be unsoldered to prevent accidentally deleting data.
 - NRST connected to the reset button through a diode.
+
+## PCB Design
+
+- Impedance controlled traces:
+	- For 50 Ohms single ended, 0.1565mm
+	- For 45 Ohms single ended, 0.1933mm
+	- For 100 Ohms diff pair, 50 Ohms single ended, 0.15mm wide, 0.5mm spacing, > 2mm gap to ground plane
+	- For 90 Ohms diff pair, 45 Ohms single ended, 0.19mm wide, 0.5mm spacing, > 2mm gap to ground plane

@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 0.0,
+          "height": 0.4,
+          "width": 0.4
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -48,10 +48,16 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.2
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -117,22 +123,22 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
+        "min_clearance": 0.1,
+        "min_connection": 0.2,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_hole_clearance": 0.2,
+        "min_hole_to_hole": 0.5,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_through_hole_diameter": 0.2,
+        "min_track_width": 0.15,
+        "min_via_annular_width": 0.05,
+        "min_via_diameter": 0.35,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -180,7 +186,10 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.3
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -207,7 +216,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -457,7 +471,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.12,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -468,9 +482,103 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.12,
+        "via_diameter": 0.6,
+        "via_drill": 0.2,
+        "wire_width": 3
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.14,
+        "diff_pair_gap": 0.4,
+        "diff_pair_width": 0.1808,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "45_trace",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1933,
+        "via_diameter": 0.35,
+        "via_drill": 0.2,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.14,
+        "diff_pair_gap": 0.37,
+        "diff_pair_width": 0.144,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "50_trace",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1565,
+        "via_diameter": 0.35,
+        "via_drill": 0.2,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.12,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "GPIO",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.12,
+        "via_diameter": 0.35,
+        "via_drill": 0.2,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.1,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Ground",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.195,
+        "via_diameter": 0.35,
+        "via_drill": 0.2,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.7,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "High_Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.0,
         "via_diameter": 0.6,
         "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.195,
+        "via_diameter": 0.35,
+        "via_drill": 0.2,
         "wire_width": 6
       }
     ],
@@ -479,7 +587,148 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Ground",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VDD"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Power_Unit/VDDCORE"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VDDA1V8_AON"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VDDA1V8"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Power_Unit/VDDA1V8PMU"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VDD3V3"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/Power_Unit/VFBSMPS"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/Power_Unit/VREFP"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Power_Unit/VDDSMPS"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Power_Unit/VLXSMPS"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VDD1V8"
+      },
+      {
+        "netclass": "High_Power",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/Power_Unit/Buck_Feedback"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/Analog_Unit/PWR_ON"
+      },
+      {
+        "netclass": "50_trace",
+        "pattern": "/FMC_SDRAM/.*"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/Connectors/.*"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/Analog_Unit/EN"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/Analog_Unit/FAULT"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/Connectors/HDP*"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/GPIO/OSC*"
+      },
+      {
+        "netclass": "50_trace",
+        "pattern": "/Analog_Unit/uD*"
+      },
+      {
+        "netclass": "45_trace",
+        "pattern": "/Analog_Unit/uH*"
+      },
+      {
+        "netclass": "45_trace",
+        "pattern": "/Analog_Unit/H*"
+      },
+      {
+        "netclass": "50_trace",
+        "pattern": "/Analog_Unit/uC*"
+      },
+      {
+        "netclass": "50_trace",
+        "pattern": "/Analog_Unit/C*"
+      },
+      {
+        "netclass": "50_trace",
+        "pattern": "/Analog_Unit/D*"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/Analog_Unit/BOOT0"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/Analog_Unit/NRST"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/Analog_Unit/TXRTUNE"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VBUS_A"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/Analog_Unit/ID"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/XSPI NOR Flash/~{ECS}"
+      },
+      {
+        "netclass": "50_trace",
+        "pattern": "/GPIO/PN*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/XSPI NOR Flash/VDD_OCTO"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {

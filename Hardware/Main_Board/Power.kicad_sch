@@ -1906,7 +1906,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ee1bd3cb-07b6-4a82-ba04-96f3b9a7526d")
-		(property "Reference" "Cout"
+		(property "Reference" "Cout1"
 			(at 163.83 53.3399 0)
 			(effects
 				(font
@@ -1960,7 +1960,7 @@
 		(instances
 			(project "Main_Board"
 				(path "/3bfaeaa6-4337-4b5f-9f42-0e28df6ecb69/88b7e6bf-fd05-40a1-af72-862ac58f0449"
-					(reference "Cout")
+					(reference "Cout1")
 					(unit 1)
 				)
 			)
@@ -1976,7 +1976,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f12139d9-62d5-4422-8d1d-44528a272bee")
-		(property "Reference" "Cin"
+		(property "Reference" "Cin1"
 			(at 74.93 67.3099 0)
 			(effects
 				(font
@@ -2030,7 +2030,7 @@
 		(instances
 			(project "Main_Board"
 				(path "/3bfaeaa6-4337-4b5f-9f42-0e28df6ecb69/88b7e6bf-fd05-40a1-af72-862ac58f0449"
-					(reference "Cin")
+					(reference "Cin1")
 					(unit 1)
 				)
 			)

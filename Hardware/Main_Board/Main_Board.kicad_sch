@@ -21,6 +21,16 @@
 		)
 		(uuid "e8aec933-7e3a-452e-95b0-9ac2addc62de")
 	)
+	(bus
+		(pts
+			(xy 80.01 142.24) (xy 92.71 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f0c46b8-9d1d-4bd2-9aab-6d88a516d47e")
+	)
 	(wire
 		(pts
 			(xy 80.01 76.2) (xy 92.71 76.2)
@@ -73,6 +83,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "{ESP32}" input
+			(at 92.71 142.24 180)
+			(uuid "4455cdb0-b945-4443-a1af-36f1a12644dd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

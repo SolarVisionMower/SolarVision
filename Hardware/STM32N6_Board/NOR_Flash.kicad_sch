@@ -1710,17 +1710,6 @@
 		)
 		(uuid "df5cc78a-b97e-4a64-9d8c-73f0045868f0")
 	)
-	(text "0402 Package\nTermination"
-		(exclude_from_sim no)
-		(at 41.148 45.212 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify bottom)
-		)
-		(uuid "ed157e13-3a67-41c5-934e-de7f23ed9dcf")
-	)
 	(text "Design Notes"
 		(exclude_from_sim no)
 		(at 163.576 95.504 0)
@@ -2128,16 +2117,6 @@
 		)
 		(uuid "2cc4b151-92d3-4ca7-8294-8c38783b1665")
 	)
-	(polyline
-		(pts
-			(xy 41.91 34.29) (xy 41.91 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2df734fe-41cf-4bb3-96a2-1d4367e662fe")
-	)
 	(bus
 		(pts
 			(xy 46.99 50.8) (xy 46.99 55.88)
@@ -2177,16 +2156,6 @@
 			(type default)
 		)
 		(uuid "3488ed61-97f5-4e53-9a8d-fdd4bd3229d9")
-	)
-	(polyline
-		(pts
-			(xy 41.91 54.61) (xy 43.18 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "387e350e-d4cf-4066-81a2-f281fef810c8")
 	)
 	(wire
 		(pts
@@ -2807,16 +2776,6 @@
 			(type default)
 		)
 		(uuid "d917b52b-e059-4e3d-9329-cc98154ac62b")
-	)
-	(polyline
-		(pts
-			(xy 43.18 34.29) (xy 41.91 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4790bc5-b130-4d94-8f72-3df5a570ddf9")
 	)
 	(wire
 		(pts

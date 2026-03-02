@@ -1325,16 +1325,6 @@
 		)
 		(uuid 62f35615-4e7d-4989-8905-203c9c079091)
 	)
-	(text "All 0R Terminations (fix later)"
-		(exclude_from_sim no)
-		(at 46.482 80.264 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "08649841-9fec-4eca-ba0d-f3f2665c69a8")
-	)
 	(text "Design Notes"
 		(exclude_from_sim no)
 		(at 40.894 151.638 0)
@@ -2896,16 +2886,6 @@
 		)
 		(uuid "8989303a-c40f-478b-a55a-713229c5caba")
 	)
-	(polyline
-		(pts
-			(xy 50.8 63.5) (xy 48.26 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a523e04-f1b7-4c72-be65-f9796fbd4d09")
-	)
 	(bus
 		(pts
 			(xy 54.61 83.82) (xy 54.61 86.36)
@@ -3536,16 +3516,6 @@
 		)
 		(uuid "e56ed398-d344-43dd-bfba-79b838e406c1")
 	)
-	(polyline
-		(pts
-			(xy 48.26 63.5) (xy 48.26 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e585863c-02bd-4580-b0fd-216d6779d4d0")
-	)
 	(wire
 		(pts
 			(xy 205.74 85.09) (xy 205.74 87.63)
@@ -3555,16 +3525,6 @@
 			(type default)
 		)
 		(uuid "e5d987ad-92f2-4617-83e9-70712bcd0777")
-	)
-	(polyline
-		(pts
-			(xy 48.26 96.52) (xy 50.8 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5e82b90-2252-4145-b22c-a057d919f7d4")
 	)
 	(bus
 		(pts

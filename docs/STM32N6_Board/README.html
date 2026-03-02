@@ -1,0 +1,264 @@
+<!-- abc -->
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>
+README
+</title>
+<style>
+body{
+    margin: 0 auto;
+    font-family: Georgia, Palatino, serif;
+    color: #444444;
+    line-height: 1;
+    max-width: 960px;
+    padding: 30px;
+}
+h1, h2, h3, h4 {
+    color: #111111;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 24px;
+    padding: 0;
+}
+h1 {
+    font-size: 48px;
+}
+h2 {
+    font-size: 36px;
+    margin: 24px 0 6px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 21px;
+}
+h5 {
+    font-size: 18px;
+}
+a {
+    color: #0099ff;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+li {
+    line-height: 24px;
+}
+li ul, li ul {
+    margin-left: 24px;
+}
+p, ul, ol {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 960px;
+}
+pre {
+    padding: 0px 24px;
+    max-width: 960px;
+    white-space: pre-wrap;
+    background-color: #e0e0e0;
+}
+code {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+    padding: 3px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+aside {
+    display: block;
+    float: right;
+    width: 390px;
+}
+blockquote {
+    margin: 1em 2em;
+    max-width: 960px;
+}
+blockquote p {
+    color: #666;
+    max-width: 960px;
+}
+hr {
+    max-width: 960px;
+    text-align: left;
+    margin: 0 auto 0 0;
+    color: #999;
+}
+table {
+    border-collapse: collapse;
+    margin: 10pt auto;
+    border: 1px solid #CCC;
+}
+table thead {
+    background-color: #EEE;
+}
+table thead td {
+    color: #666;
+}
+table td {
+    padding: 0.5em 1em;
+    border: 1px solid #CCC;
+}
+img, figcaption {
+	max-width: 960px;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+figcaption {
+	margin: 7px auto;
+}
+</style>
+</head>
+<body>
+<h1>Design Notes</h1>
+<h2>Ballout</h2>
+<ul>
+<li>This section was completed <em>after</em> wiring the Power and Analog units, as well as the NOR Flash unit in the schematic. However it is important, so it'll be at the top.</li>
+<li>There's a spreadsheet for the BGA pinout, can be found <a href="https://docs.google.com/spreadsheets/d/1W3wl7rZQ2mxVOFGO9Ns9zJrD_qd8Au_sG3PKxmy8APU/edit?usp=sharing">here</a>. It has <em>all</em> the balls, but the ones we need have been checked off, and most have signals labeled next to them.</li>
+<li>The pinout was generated in STM32CubeMX, and the configuration has been stored in <a href="../../Software"><code>Software/</code></a>.</li>
+<li>The ballout from the CubeMX's UI is shown below. It isn't very detailed in the photo, so consulting the spreadsheet (or better, git pull and open in CubeMX) is highly recommended.</li>
+</ul>
+<p><img alt="Ballout from STM32CubeMX" src="../assets/Pinout.png" /></p>
+<p>The STM32's <strong>connection with the main board</strong> will be through a set of two 18 pin header pins on each side of the stm32. These pins will be as follows, top to bottom:</p>
+<p>| Left | Right |
+|:----:|:-----:|
+| 5V | 5V |
+| GND | GND |
+| UART1-TX | UART2-TX |
+| UART1-RX | UART2-RX |
+| UART3-TX | UART4-TX |
+| UART3-RX | UART4-RX |
+| SPI1-MISO | SPI5-MISO |
+| SPI1-MOSI | SPI5-MOSI |
+| SPI1-CS | SPI5-CS |
+| SPI1-CLK | SPI5-CLK |
+| I2C1-SDA | I2C2-SDA |
+| I2C1-SCL | I2C2-SCL |
+| TIM1-CH1 | TIM3-CH2 |
+| TIM1-CH2 | TIM3-CH3 |
+| TIM4-CH1 | TIM9-CH1 |
+| TIM4-CH2 | TIM9-CH2 |
+| 5V | 5V |
+| GND | GND |</p>
+<ul>
+<li>Putting 5V <em>and</em> ground on each side promotes better current flow through the ground planes I believe. This will allow charges to flow in the direction to the nearest ground.</li>
+<li>5V pins will have reverse polarity protection diodes.</li>
+<li>All pins are technically GPIO pins, but they can also be used specifically for the tasks displayed. The timer pins are capable of PWM, and analog read upto 1v8.</li>
+</ul>
+<h2>Power</h2>
+<ul>
+<li>VDD has 7 capacitors because:<ul>
+<li>3 VDD pins</li>
+<li>2 VDDIO3 pins</li>
+<li>2 VDDIO4 pins</li>
+</ul>
+</li>
+<li>VDDCORE has 6 capacitors because:<ul>
+<li>5 VDDCORE pins</li>
+<li>1 VDDCSI pin</li>
+</ul>
+</li>
+<li>VDDA1V8 has 4 capacitors because:<ul>
+<li>ADC, CSI, USB, and PLL power</li>
+</ul>
+</li>
+<li>
+<p><strong><em>NOTE:</em></strong> In PCB design, keep decoupling capacitors close to the BGA chip.</p>
+</li>
+<li>
+<p>Notes on Power Pinout:</p>
+<ul>
+<li>Will obviously need a ground pin or two</li>
+<li>Input voltage pin will be 5V, with a max of 3A consumption (Buck converter on main board). Use IPC-2221 to determine trace widths. <ul>
+<li>The hardware development AN suggests using a 4 (if not 6) layer PCB with the inner layers being strictly ground and power planes.</li>
+</ul>
+</li>
+<li>V_DD and V_DDA18AON <strong><em>need to start first</em></strong> according to the boot order. The rest of the pins can be powered after. Thus:<ul>
+<li>V_DD and V_DDA18AON must be powered off two <em>separate</em> (crucial for analog signal integrity) LDO's.</li>
+<li>V_DDA1V8 will then be powered by an LDO off of the 5V input, <em>with PWR_ON on the enable pin</em>.</li>
+<li>V_DD1V8 and V_DD3V3 should be powered by buck converters off 5V for high power. Again <em>PWR_ON TO ENABLE PIN</em>.</li>
+</ul>
+</li>
+<li>V_DDA1V8PMU is powered off V_DD1V8, with 50R@100MHz ferrite and 100n bypass cap in between.</li>
+</ul>
+</li>
+</ul>
+<h2>Analog Unit</h2>
+<ul>
+<li>USB:<ul>
+<li>DP and DM are differential pairs, with 90 Ohms between them, or 45 Ohms each between them and ground.</li>
+<li>Length matching within a pair should be within 2mm, and maximum trace length no longer than 200mm.</li>
+<li>Ideally route DP and DM over a ground plane.</li>
+<li>Using the ECM42-40A100N6 to filter noise.</li>
+<li>Both CC pins have been pulled down. To change configuration, unsolder R24 or R25.</li>
+<li>USB Power Details:<ul>
+<li>When connected to a host via USB C, VBUS will be able to power 5V via the diode D5. </li>
+<li>When <em>acting</em> as a USB host (<code>EN = 1</code>), the NMOS will enable VBUS to be powered by 5V.</li>
+<li>If connected to a host, but also powered by 5V rail, VBUS and 5V will be powered separately, <em>but to the same voltage</em>, so theoretically I_D should be 0.</li>
+<li>Same situation as above if acting as a host, and for some reason a device supplies 5V on VBUS</li>
+<li>If, for any reason, there's a flaw in this design, <strong>unsoldering D5</strong> should fix it, but external powering capabilities will vanish.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>CSI<ul>
+<li>The 3 pairs of P and N pins for the CSI peripheral are also <em>differential pairs</em>. There's 100 Ohms impedance between them, and 50 Ohms between each of them and ground.</li>
+<li>Length matching within a pair must be within 0.1mm, and between clock and data pairs 2.5mm.</li>
+<li>Route over a ground plane.</li>
+<li>Trace lengths must not exceed 200mm.</li>
+</ul>
+</li>
+<li>General<ul>
+<li>NRST is internally pulled up via 40k Ohms. Thus, the button debouncing cap will have a H-L time constant of 1ms, and L-H of 4ms.</li>
+<li>NRST will also be connected to a GPIO, which one is to be determined.</li>
+</ul>
+</li>
+</ul>
+<h2>XSPI NOR Flash</h2>
+<ul>
+<li>Pin configurations<ul>
+<li>Uses pins PN[0..12]</li>
+<li>CS is active low, on pin PN1</li>
+<li>CLK is on PN6</li>
+<li>DQS (Data Strobe) is on pin PN0</li>
+<li>Serial IO pins are on PN[2..5] and PN[8..11]</li>
+<li>3V supply by separate LDO using label VDD_OCTO</li>
+</ul>
+</li>
+<li>Capacitors should be placed close to supply pins, in pairs of 4.7u and 100n.</li>
+<li>SIO pins to be length matched to within 10mm (I say 1-5mm), and impedance matched to 50 Ohms between trace and ground.</li>
+<li>Differential pairs must have trace impedance of 100Ohms between them.</li>
+<li>Trace capacitance not to exceed 20pF, and trace length not to exceed 120mm (use resistor termination otherwise; not doing this).</li>
+<li>External push button to reset the Flash. Once development is complete, R28 can be unsoldered to prevent accidentally deleting data.</li>
+<li>NRST connected to the reset button through a diode.</li>
+</ul>
+<h2>FMC SDRAM</h2>
+<ul>
+<li>Pin configurations are all over the place, can be seen clearly in the schematic.</li>
+<li>Capacitors will be placed close to the BGA, on the back side.</li>
+<li>Clock trace is 32.3mm long (may change), so all data/address/control traces <strong>must be between 22.3 - 42.3mm</strong> to reduce skew. There are no diff pairs. Max trace length is 2 inches (50mm) according to <a href="./IS42S16800F-7BL/LayoutGuide.pdf">IS42S Layout Guide</a>.</li>
+<li>Due to the structure of the STM32, and the fanout as well, <em>each</em> trace of data byte 2 has a long underside run. According to <a href="./STM32N657I0H3Q/hardware_dev.pdf">STM32 App Note</a>, place 10nF stitching caps along vias.</li>
+<li>SDRAM data pins are swapped within a byte. The order from pins 0-7 are <strong>1, 3, 4, 5, 7, 6, 0, 2</strong>, and for pins 8-15 are <strong>9, 15, 14, 13, 12, 8, 11, 10</strong>. </li>
+<li>Spreadsheet with pinout, trace connections, and length matching details, can be found at <a href="https://docs.google.com/spreadsheets/d/1W3wl7rZQ2mxVOFGO9Ns9zJrD_qd8Au_sG3PKxmy8APU/edit?usp=sharing">this google spreadsheet</a>.</li>
+</ul>
+<h2>PCB Design</h2>
+<ul>
+<li>Impedance controlled traces:<ul>
+<li>For 50 Ohms single ended, 0.1565mm</li>
+<li>For 45 Ohms single ended, 0.1933mm</li>
+<li>For 100 Ohms diff pair, 50 Ohms single ended, 0.144mm wide, 0.37mm spacing, &gt; 2mm gap to ground plane</li>
+<li>For 90 Ohms diff pair, 45 Ohms single ended, 0.1808mm wide, 0.4mm spacing, &gt; 2mm gap to ground plane</li>
+</ul>
+</li>
+<li>I'm putting 2.5mm mounting holes on the corners of the PCB, and the edges are rounded with a 4mm radius.</li>
+</ul>
+</body>

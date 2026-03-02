@@ -717,23 +717,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0 9.652 0)
+			(property "Reference" "U7"
+				(at 0 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
+			(property "Value" "MX25LM51245GXDI00"
+				(at 0 8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "STM32N6_Footprints:MX25LM51245GXD100_BGA24C100P5X5_600X800X120"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1062,7 +1062,7 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin passive line
 					(at 15.24 -6.35 180)
 					(length 2.54)
 					(name "NC"
@@ -1080,7 +1080,7 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin passive line
 					(at 15.24 -8.89 180)
 					(length 2.54)
 					(name "NC"
@@ -1098,7 +1098,7 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin passive line
 					(at 15.24 -11.43 180)
 					(length 2.54)
 					(name "NC"
@@ -1650,7 +1650,7 @@
 		)
 		(uuid d37808c2-2685-4f13-b100-c0d795469a99)
 	)
-	(text "- Chip runs on 3V, and is as such powered by the LDO below\n- Capacitors C[43..48] are for all VCC pins in pairs of 4.7u and 100n. Place them close to the\n   power pins for decoupling.\n- SIO[0..7] are Serial Input/Output pins, and have to be length matched to within 50 mils, and \n   also impedance matched to 50 Ohms for single-ended t-lines and 100 Ohms for differential\n   pairs.\n- All pins are active-low, and thus the required ones are pulled high.\n- TVS clamping voltage must not exceed 3v3\n- All resistors are 0805 imperial"
+	(text "- Chip runs on 3V, and is as such powered by the LDO below\n- Capacitors C[43..48] are for all VCC pins in pairs of 4.7u and 100n. Place them close to the\n   power pins for decoupling.\n- SIO[0..7] are Serial Input/Output pins, and have to be length matched to within 50 mils, and \n   also impedance matched to 50 Ohms for single-ended t-lines and 100 Ohms for differential\n   pairs.\n- All pins are active-low, and thus the required ones are pulled high.\n- TVS clamping voltage must not exceed 3v3\n- All resistors are 0805 imperial\n- NC pins have been remapped ONLY FOR ROUTING PURPOSES!!!"
 		(exclude_from_sim no)
 		(at 163.83 100.076 0)
 		(effects
@@ -1848,6 +1848,10 @@
 		(color 0 0 0 0)
 		(uuid "e93eda10-bc43-4301-93b7-240aeb092e6e")
 	)
+	(no_connect
+		(at 92.71 52.07)
+		(uuid "89d5ad10-e456-4743-b130-10de1643b3c9")
+	)
 	(bus_entry
 		(at 49.53 43.18)
 		(size -2.54 -2.54)
@@ -1901,6 +1905,15 @@
 			(type default)
 		)
 		(uuid "b4547799-2123-4c8c-8a4d-1980d6569b12")
+	)
+	(bus_entry
+		(at 105.41 49.53)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb2b6a56-0832-4a71-812a-67a0599fffe9")
 	)
 	(bus_entry
 		(at 49.53 53.34)
@@ -2159,6 +2172,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 68.58) (xy 95.25 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37f18ec7-d49d-414a-955a-723fb7106c95")
+	)
+	(wire
+		(pts
 			(xy 95.25 33.02) (xy 95.25 30.48)
 		)
 		(stroke
@@ -2216,6 +2239,16 @@
 			(type default)
 		)
 		(uuid "4cbcf7aa-2173-419f-a515-a19bfecffe4c")
+	)
+	(wire
+		(pts
+			(xy 92.71 46.99) (xy 102.87 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d908682-07bf-4dd8-9869-a43b9e3340eb")
 	)
 	(wire
 		(pts
@@ -2329,6 +2362,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 49.53) (xy 99.06 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65ac086a-912f-4ea8-bfef-8312c65f81e5")
+	)
+	(wire
+		(pts
 			(xy 95.25 68.58) (xy 95.25 71.12)
 		)
 		(stroke
@@ -2406,6 +2449,26 @@
 			(type default)
 		)
 		(uuid "72a2248c-3504-46f3-b76d-62c6061367e6")
+	)
+	(bus
+		(pts
+			(xy 105.41 49.53) (xy 105.41 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78b130b7-d71e-4337-be7d-2cbb98f37861")
+	)
+	(wire
+		(pts
+			(xy 92.71 49.53) (xy 99.06 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f13e7f8-3954-43f9-8516-755916d639f9")
 	)
 	(wire
 		(pts
@@ -2777,6 +2840,16 @@
 		)
 		(uuid "d917b52b-e059-4e3d-9329-cc98154ac62b")
 	)
+	(bus
+		(pts
+			(xy 105.41 54.61) (xy 115.57 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de62e96d-2af1-4715-8f88-55d5620188dc")
+	)
 	(wire
 		(pts
 			(xy 104.14 165.1) (xy 107.95 165.1)
@@ -2977,6 +3050,17 @@
 		)
 		(uuid "7682fe5e-3dfc-4f10-b99c-2bdca0037df4")
 	)
+	(label "PN[0..12]"
+		(at 115.57 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right bottom)
+		)
+		(uuid "77c883a9-53da-42c5-8c5d-812cefa21272")
+	)
 	(label "VDD_OCTO"
 		(at 116.84 165.1 180)
 		(effects
@@ -2986,6 +3070,16 @@
 			(justify right bottom)
 		)
 		(uuid "799a9662-a360-450f-a95f-12b32d5fc831")
+	)
+	(label "PN6"
+		(at 102.87 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8037723c-6a92-4bb2-ae91-87dcb01e517a")
 	)
 	(label "PN1"
 		(at 49.53 58.42 0)

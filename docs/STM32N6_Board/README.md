@@ -106,6 +106,7 @@ The STM32's **connection with the main board** will be through a set of two 18 p
 - Clock trace is 32.3mm long (may change), so all data/address/control traces **must be between 22.3 - 42.3mm** to reduce skew. There are no diff pairs. Max trace length is 2 inches (50mm) according to [IS42S Layout Guide](./IS42S16800F-7BL/LayoutGuide.pdf).
 - Due to the structure of the STM32, and the fanout as well, *each* trace of data byte 2 has a long underside run. According to [STM32 App Note](./STM32N657I0H3Q/hardware_dev.pdf), place 10nF stitching caps along vias.
 - SDRAM data pins are swapped within a byte. The order from pins 0-7 are **1, 3, 4, 5, 7, 6, 0, 2**, and for pins 8-15 are **9, 15, 14, 13, 12, 8, 11, 10**. 
+- Spreadsheet with pinout, trace connections, and length matching details, can be found at [this google spreadsheet](https://docs.google.com/spreadsheets/d/1W3wl7rZQ2mxVOFGO9Ns9zJrD_qd8Au_sG3PKxmy8APU/edit?usp=sharing).
 
 ## PCB Design
 

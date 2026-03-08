@@ -13,7 +13,7 @@
 
 static const char *TAG = "app";
 
-// Make the grid static so it does NOT live on the app_main stack
+// IMPORTANT: make grid static so it does not live on the app_main stack
 static occupancy_grid_t grid;
 
 void app_main(void)
@@ -35,6 +35,7 @@ void app_main(void)
 
     uint32_t printed = 0;
     uint32_t marked_points = 0;
+    uint32_t timeout_count = 0;
 
     while (1) {
         if (xQueueReceive(q, &pt, pdMS_TO_TICKS(500)) == pdTRUE) {
@@ -82,7 +83,14 @@ void app_main(void)
                 }
             }
         } else {
-            ESP_LOGW(TAG, "Queue timeout: no lidar points received");
+            timeout_count++;
+            if ((timeout_count % 5) == 0) {
+                ESP_LOGW(TAG, "Queue timeout: no lidar points received (timeouts=%lu)",
+                         (unsigned long)timeout_count);
+            }
         }
+
+        // IMPORTANT: yield a little so other tasks keep running smoothly
+        vTaskDelay(pdMS_TO_TICKS(1));
     }
 }

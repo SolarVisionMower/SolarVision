@@ -13,6 +13,9 @@
 
 static const char *TAG = "app";
 
+// Make the grid static so it does NOT live on the app_main stack
+static occupancy_grid_t grid;
+
 void app_main(void)
 {
     ESP_LOGI(TAG, "SolarVision ESP32 (Milestone 2: Occupancy Grid)");
@@ -25,7 +28,6 @@ void app_main(void)
         return;
     }
 
-    occupancy_grid_t grid;
     occupancy_grid_init(&grid);
 
     rplidar_point_t pt;
@@ -79,6 +81,8 @@ void app_main(void)
                              (int)pt.start_flag);
                 }
             }
+        } else {
+            ESP_LOGW(TAG, "Queue timeout: no lidar points received");
         }
     }
 }

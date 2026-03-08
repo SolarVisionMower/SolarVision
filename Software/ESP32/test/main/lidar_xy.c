@@ -21,7 +21,6 @@ bool lidar_polar_to_xy(const rplidar_point_t *in, lidar_xy_point_t *out)
     out->x_mm = 0.0f;
     out->y_mm = 0.0f;
 
-    // Reject invalid or zero-distance points
     if (in->distance_mm <= 0.0f) {
         return false;
     }
@@ -34,5 +33,3 @@ bool lidar_polar_to_xy(const rplidar_point_t *in, lidar_xy_point_t *out)
 
     return true;
 }
-
-

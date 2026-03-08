@@ -11,6 +11,7 @@ void occupancy_grid_init(occupancy_grid_t *grid)
     if (grid == NULL) {
         return;
     }
+
     occupancy_grid_clear(grid);
 }
 
@@ -19,6 +20,7 @@ void occupancy_grid_clear(occupancy_grid_t *grid)
     if (grid == NULL) {
         return;
     }
+
     memset(grid->cells, GRID_UNKNOWN, sizeof(grid->cells));
 }
 
@@ -46,7 +48,9 @@ bool occupancy_grid_mark_xy(occupancy_grid_t *grid, const lidar_xy_point_t *pt)
         return false;
     }
 
-    int gx, gy;
+    int gx = 0;
+    int gy = 0;
+
     if (!occupancy_grid_xy_to_cell(pt->x_mm, pt->y_mm, &gx, &gy)) {
         return false;
     }

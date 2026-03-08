@@ -4,3 +4,6 @@
 
 # FreeCAD
 *.FCBak
+
+# ESP-IDF
+**/build/

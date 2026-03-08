@@ -4,7 +4,6 @@
 #include <stddef.h>
 
 #ifndef M_PI
-#define M_PI 3.14159265358979323846
 #endif
 
 bool lidar_polar_to_xy(const rplidar_point_t *in, lidar_xy_point_t *out)
@@ -34,3 +33,4 @@ bool lidar_polar_to_xy(const rplidar_point_t *in, lidar_xy_point_t *out)
 
     return true;
 }
+

@@ -9,9 +9,10 @@
 extern "C" {
 #endif
 
-#define GRID_WIDTH       200
-#define GRID_HEIGHT      200
-#define GRID_CELL_MM     50.0f
+// Keep the grid modest and lightweight for ESP32
+#define GRID_WIDTH       120
+#define GRID_HEIGHT      120
+#define GRID_CELL_MM     100.0f
 
 #define GRID_UNKNOWN     0
 #define GRID_OCCUPIED    1

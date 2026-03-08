@@ -5,5 +5,6 @@ idf_component_register(
         "rplidar_protocol.c"
         "rplidar_task.c"
         "lidar_xy.c"
+        "occupancy_grid.c"
     INCLUDE_DIRS "."
 )

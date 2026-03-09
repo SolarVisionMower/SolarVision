@@ -6,5 +6,6 @@ idf_component_register(
         "rplidar_task.c"
         "lidar_xy.c"
         "occupancy_grid.c"
+	"obstacle_detection.c"
     INCLUDE_DIRS "."
 )

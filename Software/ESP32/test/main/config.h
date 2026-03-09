@@ -15,5 +15,6 @@
 
 // Queue/task sizing
 #define RPLIDAR_POINT_QUEUE_LEN   (2048)
-#define RPLIDAR_TASK_STACK        (4096)
+//#define RPLIDAR_TASK_STACK        (4096)
+#define RPLIDAR_TASK_STACK        (8192)
 #define RPLIDAR_TASK_PRIO         (10)

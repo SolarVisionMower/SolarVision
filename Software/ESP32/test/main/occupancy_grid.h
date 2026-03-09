@@ -1,0 +1,34 @@
+#pragma once
+
+#include <stdbool.h>
+#include <stdint.h>
+
+#include "lidar_xy.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+// Smaller, safer local grid for ESP32
+// 120 x 120 cells, 100 mm each = 12 m x 12 m local map
+#define GRID_WIDTH       120
+#define GRID_HEIGHT      120
+#define GRID_CELL_MM     100.0f
+
+#define GRID_UNKNOWN     0
+#define GRID_OCCUPIED    1
+
+typedef struct {
+    uint8_t cells[GRID_HEIGHT][GRID_WIDTH];
+} occupancy_grid_t;
+
+void occupancy_grid_init(occupancy_grid_t *grid);
+void occupancy_grid_clear(occupancy_grid_t *grid);
+
+bool occupancy_grid_xy_to_cell(float x_mm, float y_mm, int *grid_x, int *grid_y);
+bool occupancy_grid_mark_xy(occupancy_grid_t *grid, const lidar_xy_point_t *pt);
+uint8_t occupancy_grid_get_cell(const occupancy_grid_t *grid, int grid_x, int grid_y);
+
+#ifdef __cplusplus
+}
+#endif

@@ -7,3 +7,10 @@
 
 # ESP-IDF
 **/build/
+
+# Mac
+**/*.DS_Store
+**/.DS_Store
+
+# Visual Studio Code
+**/.vscode/

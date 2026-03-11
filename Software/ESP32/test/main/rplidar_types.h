@@ -20,6 +20,13 @@ typedef struct {
     uint32_t frames;
 } rplidar_stats_t;
 
+typedef struct {
+    float             x_mm;
+    float             y_mm;
+    rplidar_point_t * pt;
+    bool              valid;
+} lidar_xy_point_t;
+
 #ifdef __cplusplus
 }
 #endif

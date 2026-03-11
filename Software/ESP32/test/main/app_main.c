@@ -10,10 +10,10 @@
 #include "esp_log.h"
 #include "esp_err.h"
 
+
 static const char *TAG = "app";
 
-void app_main(void)
-{
+void app_main(void) {
     ESP_LOGI(TAG, "SolarVision ESP32 (RPLIDAR bringup + Milestone 1 XY)");
 
     ESP_ERROR_CHECK(rplidar_init_uart());

@@ -21,6 +21,7 @@ extern "C" {
 //  - dist_mm (0 if invalid)
 //  - quality 0..63
 bool rplidar_parse_node_5b(const uint8_t node[RPLIDAR_NODE_SIZE],
+                           uint8_t window_position,
                            float *angle_deg,
                            float *dist_mm,
                            uint8_t *quality);

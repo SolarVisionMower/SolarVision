@@ -13,8 +13,8 @@ static const char *TAG = "rplidar_task";
 
 static QueueHandle_t s_q = NULL;
 
-esp_err_t rplidar_init_uart(void)
-{
+// Initialize UART for our use case
+esp_err_t rplidar_init_uart(void) {
     const uart_config_t cfg = {
         .baud_rate = RPLIDAR_UART_BAUD,
         .data_bits = UART_DATA_8_BITS,
@@ -32,8 +32,8 @@ esp_err_t rplidar_init_uart(void)
     return ESP_OK;
 }
 
-static void rplidar_reader_task(void *arg)
-{
+// Task to read from the Lidar
+static void rplidar_reader_task(void *arg) {
     (void)arg;
 
     // Make sure lidar is stopped, then start scanning
@@ -42,30 +42,38 @@ static void rplidar_reader_task(void *arg)
     rplidar_send_scan();
 
     // Rolling 5-byte window
+    // win_fill is the index of last inserted byte
     uint8_t win[RPLIDAR_NODE_SIZE] = {0};
-    int win_fill = 0;
+    uint8_t win_fill = 0;
 
     float prev_angle = 0.0f;
     bool have_prev = false;
 
     while (1) {
+        // Read one byte into the buffer b
         uint8_t b;
         int n = uart_read_bytes(RPLIDAR_UART_NUM, &b, 1, pdMS_TO_TICKS(1000));
         if (n <= 0) continue;
 
-        if (win_fill < RPLIDAR_NODE_SIZE) {
-            win[win_fill++] = b;
-            if (win_fill < RPLIDAR_NODE_SIZE) continue;
-        } else {
-            // shift left by 1, append new byte
-            for (int i = 0; i < RPLIDAR_NODE_SIZE - 1; i++) win[i] = win[i + 1];
-            win[RPLIDAR_NODE_SIZE - 1] = b;
+        // if (win_fill < RPLIDAR_NODE_SIZE) {
+        //     win[win_fill++] = b;
+        //     if (win_fill < RPLIDAR_NODE_SIZE) continue;
+        // } else {
+        //     // shift left by 1, append new byte
+        //     for (int i = 0; i < RPLIDAR_NODE_SIZE - 1; i++) win[i] = win[i + 1];
+        //     win[RPLIDAR_NODE_SIZE - 1] = b;
+        // }
+
+        if (win_fill >= RPLIDAR_NODE_SIZE) {
+            win_fill = 0;
         }
+
+        win[win_fill] = b;  
 
         float ang, dist;
         uint8_t q;
 
-        if (!rplidar_parse_node_5b(win, &ang, &dist, &q)) {
+        if (!rplidar_parse_node_5b(win, win_fill, &ang, &dist, &q)) {
             continue;
         }
 

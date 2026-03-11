@@ -7,19 +7,21 @@
 #define M_PI 3.14159265358979323846
 #endif
 
+// Function to convert points from polar to cartesian coordinates
 bool lidar_polar_to_xy(const rplidar_point_t *in, lidar_xy_point_t *out)
 {
     if (in == NULL || out == NULL) {
         return false;
     }
 
-    out->angle_deg = in->angle_deg;
-    out->distance_mm = in->distance_mm;
-    out->quality = in->quality;
-    out->start_flag = in->start_flag;
+    // Output point pointer set to address of input point
+    out->pt = in;
+
+    // Initialize for possible invalidities
+    // Possibly redundant
     out->valid = false;
-    out->x_mm = 0.0f;
-    out->y_mm = 0.0f;
+    // out->x_mm = 0.0f;
+    // out->y_mm = 0.0f;
 
     if (in->distance_mm <= 0.0f) {
         return false;

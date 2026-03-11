@@ -13,18 +13,26 @@ Normal scan measurement node format (5 bytes) (common A1 mode):
 
 angle_deg = (angle_q6 / 64.0)
 distance_mm = (distance_q2 / 4.0)
+
+window_position provides the index for the node ring-buffer
 */
 
 bool rplidar_parse_node_5b(const uint8_t node[5],
+                           uint8_t window_position,
                            float *angle_deg,
                            float *dist_mm,
                            uint8_t *quality)
 {
-    const uint8_t b0 = node[0];
-    const uint8_t b1 = node[1];
-    const uint8_t b2 = node[2];
-    const uint8_t b3 = node[3];
-    const uint8_t b4 = node[4];
+    // const uint8_t b0 = node[0];
+    // const uint8_t b1 = node[1];
+    // const uint8_t b2 = node[2];
+    // const uint8_t b3 = node[3];
+    // const uint8_t b4 = node[4];
+    const uint8_t b0 = node[(window_position + 1) % 5];
+    const uint8_t b1 = node[(window_position + 2) % 5];
+    const uint8_t b2 = node[(window_position + 3) % 5];
+    const uint8_t b3 = node[(window_position + 4) % 5];
+    const uint8_t b4 = node[window_position];
 
     // sync bits must be 1 and 0 respectively
     const bool sync1 = (b0 & 0x01) != 0;
@@ -34,7 +42,8 @@ bool rplidar_parse_node_5b(const uint8_t node[5],
     // checkbit in b1 bit0 should be 1
     if ((b1 & 0x01) == 0) return false;
 
-    uint8_t q = (uint8_t)(b0 >> 2); // 6-bit quality
+    // 6-bit quality
+    uint8_t q = (uint8_t)(b0 >> 2); 
 
     // angle_q6: (b1 bits1..7) are low 7 bits, b2 is high 8 bits
     uint16_t angle_q6 = (uint16_t)((b1 >> 1) | ((uint16_t)b2 << 7));

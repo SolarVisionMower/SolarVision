@@ -9,16 +9,7 @@
 extern "C" {
 #endif
 
-typedef struct {
-    float x_mm;
-    float y_mm;
-    float angle_deg;
-    float distance_mm;
-    uint8_t quality;
-    bool start_flag;
-    bool valid;
-} lidar_xy_point_t;
-
+// Convert a point from polar to cartesian
 bool lidar_polar_to_xy(const rplidar_point_t *in, lidar_xy_point_t *out);
 
 #ifdef __cplusplus

@@ -604,10 +604,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_TVS"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Device:D_TVS_Dual_AAC"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -616,6 +613,14 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "D"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_TVS_Dual_AAC"
 				(at 0 2.54 0)
 				(effects
 					(font
@@ -623,16 +628,8 @@
 					)
 				)
 			)
-			(property "Value" "D_TVS"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at -3.81 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -641,7 +638,7 @@
 				)
 			)
 			(property "Datasheet" "~"
-				(at 0 0 0)
+				(at -3.81 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -649,7 +646,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Bidirectional transient-voltage-suppression diode"
+			(property "Description" "Bidirectional dual transient-voltage-suppression diode, center on pin 3"
 				(at 0 0 0)
 				(effects
 					(font
@@ -667,43 +664,10 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_TVS_0_1"
+			(symbol "D_TVS_Dual_AAC_0_0"
 				(polyline
 					(pts
-						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy 0 -1.27) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -714,9 +678,82 @@
 					)
 				)
 			)
-			(symbol "D_TVS_1_1"
+			(symbol "D_TVS_Dual_AAC_0_1"
+				(polyline
+					(pts
+						(xy -6.35 1.27) (xy -1.27 -1.27) (xy -1.27 1.27) (xy -6.35 -1.27) (xy -6.35 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 0) (xy 6.35 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.302 1.27) (xy -3.81 1.27) (xy -3.81 -1.27) (xy -4.318 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.318 1.27) (xy 3.81 1.27) (xy 3.81 -1.27) (xy 3.302 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 1.27) (xy 1.27 -1.27) (xy 1.27 1.27) (xy 6.35 -1.27) (xy 6.35 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_TVS_Dual_AAC_1_1"
 				(pin passive line
-					(at -3.81 0 0)
+					(at -8.89 0 0)
 					(length 2.54)
 					(name "A1"
 						(effects
@@ -734,7 +771,25 @@
 					)
 				)
 				(pin passive line
-					(at 3.81 0 180)
+					(at 0 -3.81 90)
+					(length 2.54)
+					(name "common"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 8.89 0 180)
 					(length 2.54)
 					(name "A2"
 						(effects
@@ -2066,6 +2121,12 @@
 		(uuid "24078422-0df1-4f10-94ea-92d2d3e51244")
 	)
 	(junction
+		(at 26.67 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2d308a15-b176-4293-8826-0ddcf1073525")
+	)
+	(junction
 		(at 86.36 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2084,16 +2145,16 @@
 		(uuid "4756e17d-def7-4504-b2a4-fd2b2ebf654a")
 	)
 	(junction
+		(at 36.83 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "507ac50f-d6c4-4e45-80d1-302b0d9c871d")
+	)
+	(junction
 		(at 76.2 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5ec2b65d-08ad-42ee-8d47-11ea06ea9e91")
-	)
-	(junction
-		(at 36.83 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "87b5512c-64cf-41ae-ad74-5824ab7b9e3f")
 	)
 	(junction
 		(at 137.16 73.66)
@@ -2626,6 +2687,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 121.92) (xy 26.67 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f23fc05-71fc-42ed-89cb-11203eb2fb19")
+	)
+	(wire
+		(pts
 			(xy 123.19 71.12) (xy 130.81 71.12)
 		)
 		(stroke
@@ -2723,16 +2794,6 @@
 			(type default)
 		)
 		(uuid "2c0377b1-5c4b-4258-a46c-0ed0be749853")
-	)
-	(wire
-		(pts
-			(xy 27.94 121.92) (xy 36.83 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e2a3b4f-e466-41c9-bca7-8e2c9d389c1e")
 	)
 	(wire
 		(pts
@@ -2846,6 +2907,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 139.7) (xy 26.67 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45c5deb1-6626-422f-af6b-676dea603ae4")
+	)
+	(wire
+		(pts
 			(xy 86.36 81.28) (xy 86.36 85.09)
 		)
 		(stroke
@@ -2886,13 +2957,13 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 139.7) (xy 36.83 139.7)
+			(xy 20.32 143.51) (xy 36.83 143.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4c5ad6bf-27b8-4d88-b355-cf69e2836ce8")
+		(uuid "4e29019f-ce10-4e7f-a2d2-aded0605bdf4")
 	)
 	(wire
 		(pts
@@ -2923,16 +2994,6 @@
 			(type default)
 		)
 		(uuid "5300424d-5fe9-4941-b3c9-2430881d78d8")
-	)
-	(wire
-		(pts
-			(xy 27.94 137.16) (xy 27.94 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5341e053-c94f-4765-b64c-83540c32c3d2")
 	)
 	(bus
 		(pts
@@ -3186,6 +3247,16 @@
 	)
 	(wire
 		(pts
+			(xy 20.32 130.81) (xy 20.32 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9db82041-d757-4b53-bb32-aee6fea006cc")
+	)
+	(wire
+		(pts
 			(xy 87.63 127) (xy 87.63 121.92)
 		)
 		(stroke
@@ -3316,6 +3387,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 139.7) (xy 26.67 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af8e390b-ba5c-4db2-9b0d-83c083867618")
+	)
+	(wire
+		(pts
 			(xy 135.89 58.42) (xy 142.24 58.42)
 		)
 		(stroke
@@ -3413,6 +3494,26 @@
 			(type default)
 		)
 		(uuid "c96a2b0b-1071-4af1-8c3b-0ac9953cc618")
+	)
+	(wire
+		(pts
+			(xy 36.83 143.51) (xy 36.83 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cadef454-d848-4952-8c8c-129ca545d502")
+	)
+	(wire
+		(pts
+			(xy 26.67 121.92) (xy 36.83 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd4e2b2f-1955-4117-a86e-1260669e538e")
 	)
 	(bus
 		(pts
@@ -3543,16 +3644,6 @@
 			(type default)
 		)
 		(uuid "f125a2fe-d3e1-4975-b062-7b0fec55b240")
-	)
-	(wire
-		(pts
-			(xy 27.94 129.54) (xy 27.94 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3e16de5-91ed-43b4-a764-656f1cbf03df")
 	)
 	(wire
 		(pts
@@ -4382,76 +4473,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_TVS")
-		(at 27.94 133.35 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5f4c62e8-884c-43f0-b6c0-9f72bb10eaf8")
-		(property "Reference" "D2"
-			(at 30.48 132.0799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D_TVS"
-			(at 30.48 134.6199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
-			(at 27.94 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 27.94 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 27.94 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "41b57e01-f094-4e5e-92fd-7c6eef54cad1")
-		)
-		(pin "1"
-			(uuid "2c29902c-b60b-4644-85e4-5140d3e5cdcb")
-		)
-		(instances
-			(project "UWB_CarrierBoard"
-				(path "/91b394b3-3dfa-46b7-845b-422e1bc9b943"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "symbols:DWM1000")
 		(at 57.15 63.5 0)
 		(unit 1)
@@ -5141,6 +5162,79 @@
 			(project ""
 				(path "/91b394b3-3dfa-46b7-845b-422e1bc9b943"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_TVS_Dual_AAC")
+		(at 24.13 130.81 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e22bee10-cf36-4c8b-a790-44a4b4779382")
+		(property "Reference" "D1"
+			(at 26.67 129.5399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D_TVS"
+			(at 26.67 132.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-723"
+			(at 24.13 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 24.13 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional dual transient-voltage-suppression diode, center on pin 3"
+			(at 24.13 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5ca04911-ab72-494e-a133-b3d89f7f67ab")
+		)
+		(pin "1"
+			(uuid "9e7a931f-7101-4aab-89a4-0a5fe829e7c7")
+		)
+		(pin "3"
+			(uuid "7f831827-e2d1-4f87-947e-690ac01cdbc2")
+		)
+		(instances
+			(project ""
+				(path "/91b394b3-3dfa-46b7-845b-422e1bc9b943"
+					(reference "D1")
 					(unit 1)
 				)
 			)

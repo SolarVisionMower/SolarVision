@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.2
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -188,6 +188,7 @@
       ],
       "track_widths": [
         0.0,
+        0.15,
         0.3,
         1.0
       ],
@@ -198,7 +199,7 @@
           "max_amplitude": 1.0,
           "min_amplitude": 0.2,
           "single_sided": false,
-          "spacing": 1.0
+          "spacing": 0.8
         },
         "diff_pair_skew_defaults": {
           "corner_radius_percentage": 80,
@@ -206,7 +207,7 @@
           "max_amplitude": 1.0,
           "min_amplitude": 0.2,
           "single_sided": false,
-          "spacing": 0.6
+          "spacing": 0.4
         },
         "single_track_defaults": {
           "corner_radius_percentage": 80,
@@ -214,7 +215,7 @@
           "max_amplitude": 1.0,
           "min_amplitude": 0.2,
           "single_sided": false,
-          "spacing": 0.6
+          "spacing": 0.4
         }
       },
       "via_dimensions": [
@@ -484,7 +485,7 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.12,
-        "via_diameter": 0.6,
+        "via_diameter": 0.35,
         "via_drill": 0.2,
         "wire_width": 3
       },

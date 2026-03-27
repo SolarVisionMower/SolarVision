@@ -3712,7 +3712,7 @@
 		(uuid "ff899217-a2fc-459e-8123-dac8664a0dac")
 	)
 	(label "FMC_D1"
-		(at 135.89 83.82 180)
+		(at 135.89 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3722,7 +3722,7 @@
 		(uuid "037e84f5-5be4-448b-acc6-46ae730da5b8")
 	)
 	(label "FMC_D2"
-		(at 135.89 86.36 180)
+		(at 135.89 99.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3782,7 +3782,7 @@
 		(uuid "29e1e57f-d0fa-4ec9-b2a8-15cf341cd0c3")
 	)
 	(label "FMC_D11"
-		(at 135.89 109.22 180)
+		(at 135.89 114.3 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3852,7 +3852,7 @@
 		(uuid "4be22202-be40-4c21-93d3-afc0b9bf8179")
 	)
 	(label "FMC_D12"
-		(at 135.89 111.76 180)
+		(at 135.89 119.38 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3862,7 +3862,7 @@
 		(uuid "5a8c6346-5385-47d2-a859-cd5ea91db4c4")
 	)
 	(label "FMC_D3"
-		(at 135.89 88.9 180)
+		(at 135.89 96.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3902,7 +3902,7 @@
 		(uuid "781f0604-4305-41b0-bddb-7bb69b345ae5")
 	)
 	(label "FMC_D13"
-		(at 135.89 114.3 180)
+		(at 135.89 116.84 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3912,7 +3912,7 @@
 		(uuid "789d19d4-830b-4852-bcc9-03c91821c49d")
 	)
 	(label "FMC_D0"
-		(at 135.89 81.28 180)
+		(at 135.89 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3922,7 +3922,7 @@
 		(uuid "7b9329c9-6984-423b-ad0f-10dd02f62a47")
 	)
 	(label "FMC_D8"
-		(at 135.89 101.6 180)
+		(at 135.89 109.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3932,7 +3932,7 @@
 		(uuid "7e24397a-68fd-4ded-a7c1-a427c6049c94")
 	)
 	(label "FMC_D14"
-		(at 135.89 116.84 180)
+		(at 135.89 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3972,7 +3972,7 @@
 		(uuid "954b2196-d45f-4d12-bb29-4c5c4f8d4c80")
 	)
 	(label "FMC_D9"
-		(at 135.89 104.14 180)
+		(at 135.89 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3992,7 +3992,7 @@
 		(uuid "a51420c7-6a78-4bd6-94c2-b4ef4c4dcc73")
 	)
 	(label "FMC_D10"
-		(at 135.89 106.68 180)
+		(at 135.89 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4032,7 +4032,7 @@
 		(uuid "d5c2b322-229a-4336-88d2-d47db34adebf")
 	)
 	(label "FMC_D4"
-		(at 135.89 91.44 180)
+		(at 135.89 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4042,7 +4042,7 @@
 		(uuid "d781773c-06e5-4cfb-b296-9c57afcb4029")
 	)
 	(label "FMC_D6"
-		(at 135.89 96.52 180)
+		(at 135.89 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4072,7 +4072,7 @@
 		(uuid "e7d39481-3705-4e5a-b789-89dc7e856096")
 	)
 	(label "FMC_D15"
-		(at 135.89 119.38 180)
+		(at 135.89 111.76 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4082,7 +4082,7 @@
 		(uuid "e7d625c6-ffd6-4ead-9eaf-3f0bd69c8336")
 	)
 	(label "FMC_D5"
-		(at 135.89 93.98 180)
+		(at 135.89 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4092,7 +4092,7 @@
 		(uuid "eb7b96f4-c2c1-4d27-86db-9d37d6bb35ad")
 	)
 	(label "FMC_D7"
-		(at 135.89 99.06 180)
+		(at 135.89 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)

@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -188,7 +188,6 @@
       ],
       "track_widths": [
         0.0,
-        0.15,
         0.3,
         1.0
       ],
@@ -555,7 +554,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.7,
+        "clearance": 0.15,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,

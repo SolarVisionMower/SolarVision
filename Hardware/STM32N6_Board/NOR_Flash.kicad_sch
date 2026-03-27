@@ -717,23 +717,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0 9.652 0)
+			(property "Reference" "U7"
+				(at 0 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
+			(property "Value" "MX25LM51245GXDI00"
+				(at 0 8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "STM32N6_Footprints:MX25LM51245GXD100_BGA24C100P5X5_600X800X120"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1062,7 +1062,7 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin passive line
 					(at 15.24 -6.35 180)
 					(length 2.54)
 					(name "NC"
@@ -1080,7 +1080,7 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin passive line
 					(at 15.24 -8.89 180)
 					(length 2.54)
 					(name "NC"
@@ -1098,7 +1098,7 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin passive line
 					(at 15.24 -11.43 180)
 					(length 2.54)
 					(name "NC"
@@ -1859,6 +1859,14 @@
 		(color 0 0 0 0)
 		(uuid "e93eda10-bc43-4301-93b7-240aeb092e6e")
 	)
+	(no_connect
+		(at 92.71 49.53)
+		(uuid "99b62925-83e3-4a04-80b2-81c22d71acf1")
+	)
+	(no_connect
+		(at 92.71 46.99)
+		(uuid "ea938f2f-3cb5-4cf4-a86a-0787abf95ac0")
+	)
 	(bus_entry
 		(at 49.53 43.18)
 		(size -2.54 -2.54)
@@ -1948,6 +1956,15 @@
 			(type default)
 		)
 		(uuid "dd49e093-2f05-4291-8ca9-cfe794cf0f4c")
+	)
+	(bus_entry
+		(at 101.6 54.61)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eaccd452-65f5-4cc2-b3d6-747bea1721ea")
 	)
 	(bus_entry
 		(at 49.53 58.42)
@@ -2227,6 +2244,16 @@
 			(type default)
 		)
 		(uuid "47686e94-e27d-404f-8af0-7595d446cecd")
+	)
+	(bus
+		(pts
+			(xy 101.6 49.53) (xy 101.6 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a4d8315-1aa5-41d8-921e-c7872559fd00")
 	)
 	(bus
 		(pts
@@ -2520,6 +2547,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 52.07) (xy 99.06 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98f7822c-e94b-4296-87b0-d5699211c87e")
+	)
+	(wire
+		(pts
 			(xy 74.93 172.72) (xy 83.82 172.72)
 		)
 		(stroke
@@ -2587,6 +2624,16 @@
 			(type default)
 		)
 		(uuid "a6eb0f84-83bf-498b-b68e-47755ebd7b75")
+	)
+	(bus
+		(pts
+			(xy 101.6 49.53) (xy 110.49 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aaf697dd-f501-4767-b575-22d6681ec07f")
 	)
 	(wire
 		(pts
@@ -3048,6 +3095,16 @@
 		)
 		(uuid "9520408d-8ccb-40d6-a652-5465597258c5")
 	)
+	(label "PN4"
+		(at 99.06 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "972532dc-3994-430a-a43d-f9e46fe0b846")
+	)
 	(label "VDD_OCTO"
 		(at 92.71 121.92 180)
 		(effects
@@ -3068,6 +3125,18 @@
 			(justify left bottom)
 		)
 		(uuid "a2a1d81c-41df-4a5c-bde8-572fe4a501f3")
+	)
+	(label "PN[0..12]"
+		(at 110.49 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "a6c5a163-a44a-40ee-b054-c4a26cc2e261")
 	)
 	(label "PN11"
 		(at 49.53 53.34 0)

@@ -7716,7 +7716,7 @@
 		)
 		(uuid "147be306-6d54-416c-920c-9a7a3c5c4afb")
 	)
-	(label "CKP"
+	(label "CK_P"
 		(at 149.86 72.39 0)
 		(effects
 			(font
@@ -7746,7 +7746,7 @@
 		)
 		(uuid "167f98c9-15b6-4a83-81ac-baed7920be48")
 	)
-	(label "CKN"
+	(label "CK_N"
 		(at 149.86 69.85 0)
 		(effects
 			(font
@@ -7819,7 +7819,7 @@
 		)
 		(uuid "1dd92e83-2521-49d9-bf85-2826f621bf30")
 	)
-	(label "D1N"
+	(label "D1_N"
 		(at 149.86 62.23 0)
 		(effects
 			(font
@@ -7839,7 +7839,7 @@
 		)
 		(uuid "22f1a0b6-a0aa-4c0f-a088-9e836e765876")
 	)
-	(label "D0N"
+	(label "D0_N"
 		(at 149.86 54.61 0)
 		(effects
 			(font
@@ -7940,7 +7940,7 @@
 		)
 		(uuid "534b2a8e-b068-4782-9f0f-186be8c542c9")
 	)
-	(label "D1P"
+	(label "D1_P"
 		(at 149.86 64.77 0)
 		(effects
 			(font
@@ -8050,7 +8050,7 @@
 		)
 		(uuid "7ca0080e-7994-4baa-a3db-6cb16604b9da")
 	)
-	(label "D0P"
+	(label "D0_P"
 		(at 149.86 57.15 0)
 		(effects
 			(font

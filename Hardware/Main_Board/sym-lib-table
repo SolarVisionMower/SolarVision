@@ -1,4 +1,5 @@
 (sym_lib_table
   (version 7)
   (lib (name "ESP32-Symbols")(type "KiCad")(uri "${KIPRJMOD}/ESP32_Symbols.kicad_sym")(options "")(descr ""))
+  (lib (name "ESPP")(type "KiCad")(uri "C:/Users/bumpy/d/symbols.kicad_sym")(options "")(descr ""))
 )

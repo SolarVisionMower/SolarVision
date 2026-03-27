@@ -51,8 +51,31 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|249584114|132457509|2cd3288c-389a-411a-870e-0cb23aa12af1|79ea206d-d7b7-486d-8f3e-f4f653ffef2f",
+          ""
+        ],
+        [
+          "courtyards_overlap|251867995|52605000|79ea206d-d7b7-486d-8f3e-f4f653ffef2f|bc2d0274-bcf9-4771-b936-3c84e642ac07",
+          ""
+        ],
+        [
+          "unconnected_items|73580000|135000000|45134670-b136-4c96-ad26-c7ab20261f1c|b9118168-6277-4ddc-b2bc-f2568c2ec1c5",
+          "idk why"
+        ],
+        [
+          "unconnected_items|91550000|117700000|b74ce456-8de9-47c1-9844-410a5dc52b04|b9118168-6277-4ddc-b2bc-f2568c2ec1c5",
+          "idk"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -117,8 +140,8 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
+        "min_clearance": 0.2,
+        "min_connection": 0.2,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
@@ -129,9 +152,9 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
+        "min_through_hole_diameter": 0.35,
+        "min_track_width": 0.2,
+        "min_via_annular_width": 0.075,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
@@ -180,7 +203,12 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.15,
+        0.3,
+        1.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -207,7 +235,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -471,7 +504,7 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "via_drill": 0.35,
         "wire_width": 6
       }
     ],
@@ -487,8 +520,8 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
-      "pos_files": "",
+      "plot": "gerbers/",
+      "pos_files": "gerbers/BOM_CPL/",
       "specctra_dsn": "",
       "step": "",
       "svg": "",
@@ -617,10 +650,6 @@
     [
       "926af70a-c724-4f44-8d77-968ee776a06b",
       "ESP32S3"
-    ],
-    [
-      "7b06a695-7782-48c9-8e2f-bf71bfa2a546",
-      "STM32N6"
     ],
     [
       "88b7e6bf-fd05-40a1-af72-862ac58f0449",

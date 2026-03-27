@@ -2595,7 +2595,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 142.24 62.23 0)
 			(effects
 				(font
@@ -3581,73 +3581,6 @@
 			(project "Main_Board"
 				(path "/3bfaeaa6-4337-4b5f-9f42-0e28df6ecb69/88b7e6bf-fd05-40a1-af72-862ac58f0449"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 76.2 74.93 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fedb4b45-a95f-4d25-b7aa-871b19bb8cd1")
-		(property "Reference" "C3"
-			(at 69.596 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "C"
-			(at 72.136 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 75.2348 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 76.2 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "39f45be1-bb8b-43ff-bb3f-f1eb54aa05a7")
-		)
-		(pin "2"
-			(uuid "337b870c-0f4f-4ddf-b39e-5bc5808dd7ed")
-		)
-		(instances
-			(project "Main_Board"
-				(path "/3bfaeaa6-4337-4b5f-9f42-0e28df6ecb69/88b7e6bf-fd05-40a1-af72-862ac58f0449"
-					(reference "C3")
 					(unit 1)
 				)
 			)

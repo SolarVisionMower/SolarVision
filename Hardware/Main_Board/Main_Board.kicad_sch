@@ -5,6 +5,9 @@
 	(uuid "3bfaeaa6-4337-4b5f-9f42-0e28df6ecb69")
 	(paper "A4")
 	(lib_symbols)
+	(bus_alias "433RF"
+		(members "RF_RX" "RF_TX" "SET")
+	)
 	(bus_alias "ESP32"
 		(members "GPIO[0..48]" "RST")
 	)
@@ -21,9 +24,49 @@
 		)
 		(uuid "185d483e-c8da-47c8-a3b8-b065a45e4da9")
 	)
+	(bus
+		(pts
+			(xy 87.63 137.16) (xy 100.33 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05aae63f-2be7-49ce-8fd5-e09e91a7675c")
+	)
+	(bus
+		(pts
+			(xy 87.63 132.08) (xy 100.33 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bd202a6-12d2-4e2b-90d4-e60f9476f63a")
+	)
+	(bus
+		(pts
+			(xy 87.63 121.92) (xy 100.33 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40a701dc-3216-4198-8155-cbdda9354bf4")
+	)
+	(bus
+		(pts
+			(xy 87.63 127) (xy 100.33 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "731f43eb-2cf6-4d7e-b13b-8bde52d6d1b9")
+	)
 	(sheet
-		(at 102.87 132.08)
-		(size 68.58 24.13)
+		(at 100.33 115.57)
+		(size 71.12 40.64)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -38,7 +81,7 @@
 		)
 		(uuid "0296f5c7-7ac8-4dea-9553-8a342eee9f44")
 		(property "Sheetname" "Connectors"
-			(at 102.87 131.3684 0)
+			(at 100.33 114.8584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -47,12 +90,52 @@
 			)
 		)
 		(property "Sheetfile" "Connectors.kicad_sch"
-			(at 102.87 156.7946 0)
+			(at 100.33 156.7946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "{433RF}" input
+			(at 100.33 121.92 180)
+			(uuid "862fcecc-b8ed-4d58-a014-f083effa3aa5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{DWM1000}" input
+			(at 100.33 127 180)
+			(uuid "450da5ab-d056-485e-8259-5b341037284d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{ESP32}" input
+			(at 100.33 132.08 180)
+			(uuid "401c01fd-3618-4ca2-ab33-50019e84fb2a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{STM32N6}" input
+			(at 100.33 137.16 180)
+			(uuid "0f005ed6-dba7-4341-8ce0-793f90023a71")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -64,50 +147,8 @@
 		)
 	)
 	(sheet
-		(at 101.6 96.52)
-		(size 69.85 24.13)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 221 221 1.0000)
-		)
-		(uuid "7b06a695-7782-48c9-8e2f-bf71bfa2a546")
-		(property "Sheetname" "STM32N6"
-			(at 101.6 95.8084 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "DWM1000.kicad_sch"
-			(at 101.6 121.2346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Main_Board"
-				(path "/3bfaeaa6-4337-4b5f-9f42-0e28df6ecb69"
-					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 100.33 63.5)
-		(size 72.39 24.13)
+		(size 72.39 43.18)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -131,7 +172,7 @@
 			)
 		)
 		(property "Sheetfile" "Power.kicad_sch"
-			(at 100.33 88.2146 0)
+			(at 100.33 107.2646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -182,7 +223,7 @@
 			)
 		)
 		(pin "{DWM1000}" input
-			(at 87.63 110.49 0)
+			(at 87.63 127 0)
 			(uuid "bbeb33a6-78a2-431d-bf9d-74d279446ea4")
 			(effects
 				(font
@@ -192,8 +233,28 @@
 			)
 		)
 		(pin "{ESP32}" input
-			(at 87.63 114.3 0)
+			(at 87.63 132.08 0)
 			(uuid "25f2e599-17d7-491f-b2e6-ae8f4f0e430c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "{433RF}" input
+			(at 87.63 121.92 0)
+			(uuid "3cd992dd-5326-4bc0-a6be-054242320bbe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "{STM32N6}" input
+			(at 87.63 137.16 0)
+			(uuid "f8cde541-4f9e-4ec3-bd05-6204f01ee5b9")
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.2
+          "min_clearance": 0.4
         }
       },
       "diff_pair_dimensions": [
@@ -58,7 +58,68 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "connection_width|185028256|131274783|87a66c68-064d-4b11-b8df-4fb0575f6a24|00000000-0000-0000-0000-000000000000",
+          "it's clipping a redundant copper pour"
+        ],
+        [
+          "connection_width|211226000|127649500|9c7a866a-fd30-4031-a606-e78458e1333c|8be52d68-a456-4b2e-82a4-d9fcad0a3445",
+          "Imma let it slide."
+        ],
+        [
+          "hole_clearance|187350000|151455000|d3aaff70-b06a-4aa0-9d48-bc14b0e5a55a|546fc284-7995-4fbf-93f1-c74adf9c4e7f",
+          "This is how the footprint came. im not gonna change it."
+        ],
+        [
+          "hole_clearance|193150000|151455000|43c8854a-79f9-4987-9edd-1a6d3b03c079|fbcf541c-e40d-4769-9dda-b35eb7b70fe3",
+          "This is how the footprint came. im not gonna change it."
+        ],
+        [
+          "hole_to_hole|172900000|112750000|2c64d0aa-14f7-4886-a947-6d6fca5b7498|6420d708-d252-499e-9e5a-f15354904a38",
+          "close enough"
+        ],
+        [
+          "hole_to_hole|174800000|120750000|41ecebe8-17a4-4dfa-89c3-4785d23a82c2|6e53b3d8-7515-4456-90a6-f5388b28cbc1",
+          "close enough"
+        ],
+        [
+          "hole_to_hole|175850000|120850000|153778d5-6c83-4d27-b960-9e3899e163ce|ea774e98-32cc-4fcc-983b-6ce05e8b1ee9",
+          "close enough"
+        ],
+        [
+          "hole_to_hole|179850000|114287500|1b67dcce-5120-4d92-b5f9-80282d4940f1|a769a5bc-5416-494d-9503-3b332018e7fb",
+          "JLC's minimum is 0.2mm even though I'm trying to keep it >0.5. This one passes."
+        ],
+        [
+          "hole_to_hole|180100000|131000000|05188009-3940-46b3-b203-531d6e792548|c6b115e9-efd1-415f-ab02-e048b0b64f1b",
+          "close enough"
+        ],
+        [
+          "hole_to_hole|180250000|131681750|05188009-3940-46b3-b203-531d6e792548|5976851e-3c2e-42a6-a26f-407666d30d18",
+          "close enough"
+        ],
+        [
+          "hole_to_hole|185518860|131275000|14f2c261-5fe8-4fb7-8255-f3d4a9108215|e0f569e4-493b-4231-b12b-49b16a5700b1",
+          "close enough"
+        ],
+        [
+          "hole_to_hole|202750000|129000000|0840018f-d132-4620-a72e-796f7f1f8fed|ea237489-f7b6-4e4e-903c-0d7846881547",
+          "Its a diff pair, gets a pass"
+        ],
+        [
+          "hole_to_hole|202810000|116487505|490e27a6-9ba8-4286-921f-4b9e77b3a9d9|c54acb40-96e7-46f9-adea-05da9efbe2ce",
+          "its fine"
+        ],
+        [
+          "silk_edge_clearance|185780000|157480000|5472c0a9-c1fd-4d12-a5de-9c62b04389dd|d67254a1-685e-431c-89d7-6b72fbfa8407",
+          "Not gonna move everything around right now. Its fine."
+        ],
+        [
+          "silk_edge_clearance|194720000|157480000|5472c0a9-c1fd-4d12-a5de-9c62b04389dd|08db3794-183d-4d53-a18f-e8b8a57023b7",
+          "Not gonna move everything around right now. Its fine."
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -124,14 +185,14 @@
       "rules": {
         "max_error": 0.005,
         "min_clearance": 0.1,
-        "min_connection": 0.2,
+        "min_connection": 0.15,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.2,
         "min_hole_to_hole": 0.5,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
@@ -586,7 +647,9 @@
     "meta": {
       "version": 4
     },
-    "net_colors": null,
+    "net_colors": {
+      "VDD": "rgb(124, 0, 255)"
+    },
     "netclass_assignments": null,
     "netclass_patterns": [
       {

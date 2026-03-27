@@ -1,4 +1,4 @@
-25624219737273620
+25617068753984456
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -93786,6 +93786,13 @@ MX25LM51245GXD100_BGA24C100P5X5_600X800X120
 24
 24
 STM32N6_Footprints
+SHOUHAN_TYPE-C_16PIN_2MD__073_
+
+
+0
+16
+16
+STM32N6_Footprints
 STM32N657I0H3Q_VFBGA178_14x14
 
 
@@ -102703,3 +102710,17 @@ Varistor VF
 0
 2
 2
+cap_smd_custom
+CL06B104KO5NNNC
+
+
+0
+2
+2
+cap_smd_custom
+Untitled
+
+
+0
+0
+0

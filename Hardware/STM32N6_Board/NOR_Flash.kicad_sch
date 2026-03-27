@@ -2227,16 +2227,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 114.3) (xy 133.35 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4765328b-aaac-4785-ab9a-255546de56d9")
-	)
-	(wire
-		(pts
 			(xy 144.78 41.91) (xy 144.78 40.64)
 		)
 		(stroke
@@ -2877,7 +2867,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 121.92) (xy 92.71 121.92)
+			(xy 80.01 121.92) (xy 85.09 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2937,7 +2927,17 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 110.49) (xy 92.71 110.49)
+			(xy 120.65 114.3) (xy 127 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4aedd34-0102-4cda-9bbd-d699eda990b6")
+	)
+	(wire
+		(pts
+			(xy 80.01 110.49) (xy 85.09 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2964,16 +2964,6 @@
 			(justify left bottom)
 		)
 		(uuid "05d17d4e-3778-4455-b1d8-175dba5969f1")
-	)
-	(label "VDD_OCTO"
-		(at 133.35 114.3 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "14753b0f-6fc2-4feb-aaed-6f8c98971db3")
 	)
 	(label "PWR_ON"
 		(at 195.58 54.61 0)
@@ -3105,16 +3095,6 @@
 		)
 		(uuid "972532dc-3994-430a-a43d-f9e46fe0b846")
 	)
-	(label "VDD_OCTO"
-		(at 92.71 121.92 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9ac45d84-0804-4a96-8fea-2b26395c53f9")
-	)
 	(label "{XSPI}"
 		(at 195.58 48.26 0)
 		(effects
@@ -3180,16 +3160,6 @@
 		)
 		(uuid "e0096518-89de-4932-bdee-0c217814c1af")
 	)
-	(label "VDD_OCTO"
-		(at 92.71 110.49 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e922d7c7-be35-42aa-9da3-ae90b6b1753d")
-	)
 	(label "PN2"
 		(at 49.53 35.56 0)
 		(effects
@@ -3239,6 +3209,72 @@
 			(justify left bottom)
 		)
 		(uuid "fd2a3fd6-ae1d-4f30-9dd0-848ee219c75a")
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 127 114.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8389bbc8-9c2c-4b71-8ebb-0e42617ad1d8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 133.6138 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 85.09 121.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "946f858b-25b7-43e3-b1f8-a312e5e07e02")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 91.7038 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 85.09 110.49 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bf7201cf-1167-4423-809d-4d2ad6e55858")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 91.7038 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(hierarchical_label "{XSPI}"
 		(shape bidirectional)

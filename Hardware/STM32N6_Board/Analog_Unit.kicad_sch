@@ -4772,7 +4772,7 @@
 		(members "CK_N" "CK_P" "D0_N" "D0_P" "D1_N" "D1_P" "EN")
 	)
 	(bus_alias "STM32_USB"
-		(members "CC1" "CC2" "HSDP" "HSDM" "FAULT" "EN_USB" "VBUS")
+		(members "CC1" "CC2" "HSD_P" "HSD_N" "FAULT" "EN_USB" "VBUS")
 	)
 	(rectangle
 		(start 177.8 66.04)
@@ -6350,8 +6350,8 @@
 		)
 		(uuid "163da311-99f1-4779-b02b-66062afadab5")
 	)
-	(label "HSDM"
-		(at 49.53 110.49 0)
+	(label "HSD_N"
+		(at 49.53 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6482,8 +6482,8 @@
 		)
 		(uuid "3d1e6409-9e16-4303-81fa-34aae5f55632")
 	)
-	(label "uHSDP"
-		(at 90.17 107.95 180)
+	(label "uHSD_P"
+		(at 90.17 110.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6492,7 +6492,7 @@
 		)
 		(uuid "3f773e3b-c1d6-46af-af8e-8b771f6c9b30")
 	)
-	(label "EN"
+	(label "EN_USB"
 		(at 48.26 163.83 0)
 		(effects
 			(font
@@ -6512,8 +6512,8 @@
 		)
 		(uuid "45c2af85-47ea-4bb7-a5b8-79da2896c799")
 	)
-	(label "uHSDM"
-		(at 90.17 110.49 180)
+	(label "uHSD_N"
+		(at 90.17 107.95 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6663,7 +6663,7 @@
 		)
 		(uuid "8145f668-d04d-494f-bd45-74df8ebc1829")
 	)
-	(label "uHSDP"
+	(label "uHSD_P"
 		(at 33.02 43.18 0)
 		(effects
 			(font
@@ -6784,8 +6784,8 @@
 		)
 		(uuid "a3806c62-142e-41ed-99d6-7703d3bdbdfc")
 	)
-	(label "HSDP"
-		(at 49.53 107.95 0)
+	(label "HSD_P"
+		(at 49.53 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6804,7 +6804,7 @@
 		)
 		(uuid "a56ef2b1-740e-4616-b083-b9677bd67356")
 	)
-	(label "uHSDM"
+	(label "uHSD_N"
 		(at 33.02 45.72 0)
 		(effects
 			(font

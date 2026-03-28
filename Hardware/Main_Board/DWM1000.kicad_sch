@@ -1,0 +1,13 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "356b4ae4-f1b2-40ac-8692-3890e7fa67aa")
+	(paper "A4")
+	(lib_symbols)
+	(bus_alias "STM32N6"
+		(members "TX[1..4]" "RX[1..4]" "MISO1" "MOSI1" "~{CS}1" "CLK1" "SDA[1..2]"
+			"SCL[1..2]" "PA10" "PA15" "PC7" "PG13" "PG15" "PF14" "PF7" "PD13"
+		)
+	)
+)

@@ -1,4 +1,5 @@
 **/*-backups/
+**/*.FCBak
 
 # Created by https://www.toptal.com/developers/gitignore/api/vim,python,c++,cmake,macos,c,visualstudiocode,visualstudio
 # Edit at https://www.toptal.com/developers/gitignore?templates=vim,python,c++,cmake,macos,c,visualstudiocode,visualstudio

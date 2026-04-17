@@ -19,6 +19,12 @@
 #define SPEED_OF_LIGHT 299702547
 
 /* Declaration of static functions. */
-void ss_init_run(void * pvParameters);
-static void resp_msg_get_ts(uint8_t *ts_field, uint32_t *ts);
-void ss_initiator_task_function(void * pvParameter);
+void ss_init_run();
+void ss_initiator_task_function(void * pvParameters);
+
+static void resp_msg_get_ts(uint8 *ts_field, uint32 *ts) {
+    *ts = 0;
+    for (int i = 0; i < RESP_MSG_TS_LEN; i++){
+        *ts += ts_field[i] << (i * 8);
+    }
+}

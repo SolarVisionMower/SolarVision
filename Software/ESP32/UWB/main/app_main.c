@@ -66,7 +66,7 @@ int app_main(void) {
     dwt_setrxaftertxdelay(POLL_TX_TO_RESP_RX_DLY_UUS);
     dwt_setrxtimeout(65000); // Maximum value timeout with DW1000 is 65ms
     
-    xTaskCreate(&ss_init_run, "Ranging_Function", 2048, NULL, 5, NULL);
+    xTaskCreate(&ss_initiator_task_function, "Ranging_Function", 2048, NULL, 5, NULL);
     
     return 0;
 }

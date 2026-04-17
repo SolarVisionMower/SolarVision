@@ -20,6 +20,8 @@
 
 #define MAX_BUF_SIZE 128
 
+spi_device_handle_t dw1000_spi_handle = NULL;
+
 /****************************************************************************//**
  *
  *                              APP global variables
@@ -98,10 +100,10 @@ void port_wakeup_dw1000_fast(void)
  * @brief SPI user event handler.
  * @param event
  */
-void spi_event_handler(nrf_drv_spi_evt_t const * p_event, void * p_context)
-{
-    spi_xfer_done = true;
-}
+// void spi_event_handler(nrf_drv_spi_evt_t const * p_event, void * p_context)
+// {
+//     spi_xfer_done = true;
+// }
 
 //================================================================================================
 int readfromspi(uint16 headerLength, const uint8 *headerBuffer, uint32 readlength, uint8 *readBuffer)
@@ -154,10 +156,10 @@ int readfromspi(uint16 headerLength, const uint8 *headerBuffer, uint32 readlengt
     t.tx_buffer = tx_buf;           // Data to send (Header + Dummies)
     t.rx_buffer = rx_buf;           // Data to receive (Garbage + Actual Data)
 
-    esp_err_t ret = spi_device_transmit(spi, &t);
+    esp_err_t ret = spi_device_transmit(dw1000_spi_handle, &t);
 
     if (ret == ESP_OK) {
-        memcpy(readBuffer, rx_buf + headerLength, readLength);
+        memcpy(readBuffer, rx_buf + headerLength, readlength);
         return 0;
     }
 
@@ -193,14 +195,14 @@ int writetospi(uint16_t headerLength, const uint8 *headerBuffer, uint32 bodyleng
     spi_transaction_t t;
     memset(&t, 0, sizeof(t));
 
-    uint8_t tx_buf[headerLength + bodyLength];
+    uint8_t tx_buf[headerLength + bodylength];
     memcpy(tx_buf, headerBuffer, headerLength);
-    memcpy(tx_buf + headerLength, bodyBuffer, bodyLength);
+    memcpy(tx_buf + headerLength, bodyBuffer, bodylength);
 
-    t.length = (headerLength + bodyLength) * 8; // Bits
+    t.length = (headerLength + bodylength) * 8; // Bits
     t.tx_buffer = tx_buf;
 
-    esp_err_t ret = spi_device_transmit(spi, &t);
+    esp_err_t ret = spi_device_transmit(dw1000_spi_handle, &t);
     return (ret == ESP_OK) ? 0 : -1;
 } 
 

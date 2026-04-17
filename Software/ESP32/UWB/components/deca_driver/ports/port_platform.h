@@ -11,7 +11,6 @@
  * @author DecaWave
  */
 
-
 #ifndef PORT_PLATFORM_H_
 #define PORT_PLATFORM_H_
 
@@ -22,6 +21,7 @@ extern "C" {
 #include <stdint.h>
 #include <string.h>
 
+#include "deca_device_api.h"
 
 /*
 
@@ -32,31 +32,27 @@ device should have its own antenna delay properly calibrated to get good precisi
 
 */
 
-/* Default antenna delay values for 64 MHz PRF.*/
-#define TX_ANT_DLY 16456
-#define RX_ANT_DLY 16456	
+typedef uint8_t  uint8;
+typedef uint16_t uint16;
+typedef uint32_t uint32;
+typedef uint64_t uint64;
 
-	
 int readfromspi(uint16 headerLength, const uint8 *headerBuffer, uint32 readlength, uint8 *readBuffer);
 int writetospi( uint16 headerLength, const uint8 *headerBuffer, uint32 bodylength, const uint8 *bodyBuffer);
 decaIrqStatus_t decamutexon(void);
 void decamutexoff(decaIrqStatus_t s);
 
-#if defined(BOARD_DW1001_DEV)
-#define SPI_CS_PIN   17 /**< SPI CS Pin.*/
-#else
-#error "Example is not supported on that board."
-#endif
-
-#define SPI_INSTANCE  1 /**< SPI instance index. */
-static const nrf_drv_spi_t spi = NRF_DRV_SPI_INSTANCE(SPI_INSTANCE);  /**< SPI instance. */
-static volatile bool spi_xfer_done;  /**< Flag used to indicate that SPI instance completed the transfer. */
+// #if defined(BOARD_DW1001_DEV)
+// #define SPI_CS_PIN   17 /**< SPI CS Pin.*/
+// #else
+// #error "Example is not supported on that board."
+// #endif
 
 /**
  * @brief SPI user event handler.
  * @param event
  */
-void spi_event_handler(nrf_drv_spi_evt_t const * p_event, void * p_context);
+// void spi_event_handler(nrf_drv_spi_evt_t const * p_event, void * p_context);
 
 #if 0
 

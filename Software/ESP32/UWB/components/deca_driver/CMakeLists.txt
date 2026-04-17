@@ -3,8 +3,10 @@ idf_component_register(
         "deca_device.c" 
         "deca_params_init.c" 
         "deca_range_tables.c"
-	"ports/port_platform.c"
+        "ports/port_platform.c"
     INCLUDE_DIRS 
-	"./ports/"
+	    "./ports/"
         "."
+    REQUIRES
+        "driver"
 )
